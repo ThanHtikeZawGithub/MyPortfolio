@@ -16,11 +16,11 @@ const About = () => {
                     key={exp.id}
                     className={`${
                     exp.id === selected
-                        ? "text-primary3 md:before:h-full before:bg-primary3 before:h-[2px]"
+                        ? "text-primary3 transition-all duration-500 md:before:h-full before:bg-primary3 before:h-[2px]"
                         : "dark:text-primary"
                     } relative font-raleway tracking-widest font-semibold text-xs md:text-xl list-none 
                     p-4 md:h-16 before:absolute before:w-full w-full before:h-1 md:before:w-1 before:bottom-0 
-                    md:before:-left-2 md:before:h-full hover:translate-x-2 transition-all duration-700 cursor-pointer`}
+                    md:before:-left-2 md:before:h-full cursor-pointer`}
                     onClick={()=>setSelected(exp.id)}
                   >
                     {exp.title}

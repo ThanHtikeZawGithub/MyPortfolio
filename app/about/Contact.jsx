@@ -1,6 +1,8 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 
+
+//I'm using react form library called react-hook-form;
 const Contact = () => {
   const {
     register,
@@ -21,11 +23,10 @@ const Contact = () => {
         <h1 className="text-4xl top-0 py-24 font-extrabold text-center text-dark text-clip tracking-wider font-mont">SAY  HELLO</h1>
         <div className="block md:flex md:basis-1/2 md:justify-center md:gap-16">
           <div className="">
-            <img
-              src="/assets/profile_5.png"
-              alt="contact"
-              className="w-full h-[300px]"
-            />
+            <h3>Go on and ask me if you want to know more details about me</h3>
+           <h1>Info</h1>
+           <p>Email</p>
+           <p>Phone</p>
           </div>
           <div className="block px-4 md:flex md:basis-1/2">
             <form

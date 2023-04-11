@@ -1,36 +1,60 @@
-import React from "react";
+import React, { useState } from "react";
 import { skills } from "../Info";
-
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css/pagination";
+// import required modules
+import { Pagination } from "swiper";
+import "swiper/swiper.min.css";
 const Skill = () => {
+  const [clickIcon, setClickIcon] = useState(false);
   return (
-    <section className="min-h-screen -z-20 p-24 md:p-32">
-      <div className="grid md:grid-cols-3 grid-cols-1 gap-12 w-full mx-auto mb-32">
-        {skills.map((skill) => {
-          return (
-            <div key={skill.id} className="rounded-t-xl py-4 px-2">
-              <div className="flex items-center justify-between font-mont font-bold text-xl px-4">
-                <h3>{skill.name}</h3>
-                <span>
-                  {skill.percentage}
-                  <span className="text-primary3">%</span>
-                </span>
-              </div>
-              <img
-                src={skill.src}
-                alt="skill image"
-                className="w-auto h-16 my-4"
-              />
-              <div className="md:h-1 bg-gray-600 z-0 md:w-full rounded-full border-solid">
-                <span
-                  className={`block bg-primary3 w-[${skill.percentage}%] h-1 relative z-10`}
-                >
-                  <span className="absolute rounded-full right-0 -top-3 w-6 h-6 bg-primary3 z-20"></span>
-                </span>
-              </div>
-            </div>
-          );
-        })}
+    <section className="min-h-screen -z-20 py-1 md:px-24">
+      <div className="title my-24">What You Can Expect From Me
       </div>
+      <Swiper 
+        pagination={{
+          clickable: true,
+        }}
+        breakpoints={{
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+        }}
+        modules={[Pagination]}
+        className="mySwiper relative text-center">
+         {skills.map((skill,index)=>{
+          return (
+            <SwiperSlide key={index} className="bg-dark text-left py-4 px-4 rounded-md ">
+              <div className="relative flex items-center justify-between overflow-hidden">
+              <span className="text-primary3 font-raleway dark:text-primary3 capitalize mb-16 font-semibold block">{skill.name}</span>
+              <img src="/assets/shape-1.png" alt="image" className="w-28 h-28 -top-8 -right-8 absolute"/>
+              </div>
+              <h3 className="text-2xl font-bold mb-5 text-primary3 dark:text-primary3">{skill.title}</h3>
+              <p className="min-h-[175px] text-primary dark:text-primary">{skill.description}</p>
+              {skill.img.map((image,index)=>{
+                return(
+                  <div key={index} className="inline-flex items-center justify-center mx-auto">
+                    <img src={image.src} alt='Skill Image' className="h-10 w-auto"/>
+                  </div>
+                )
+              })}
+              
+            </SwiperSlide>
+          )
+         })
+         }
+      </Swiper>
     </section>
   );
 };

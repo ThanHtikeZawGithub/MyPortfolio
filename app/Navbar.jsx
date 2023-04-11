@@ -25,7 +25,7 @@ const Navbar = () => {
     <header
       className={`${
         isTopOfPage ? "fixed top-0 w-full " : "fixed top-0 backdrop-blur-2xl "
-      }top-0 w-full px-20 py-6 font-medium z-20 flex items-center justify-between`}
+      }top-0 w-full px-20 py-3 font-medium z-20 flex items-center justify-between`}
     >
       <nav className="flex items-center justify-end">
         <div className=" flex items-center gap-8">

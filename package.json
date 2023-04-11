@@ -15,6 +15,8 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.43.9",
+    "react-intersection-observer": "^9.4.3",
+    "swiper": "^9.2.0",
     "yup": "^1.0.2"
   },
   "devDependencies": {

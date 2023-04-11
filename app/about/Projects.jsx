@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { GithubIcon } from "../Icons";
+import AnimatedContents from "../PopUpAnimate";
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
@@ -29,7 +30,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           target="_blank"
           className="hover:scale-105 duration-500"
         >
-          <h2 className="my-2 w-full text-left text-4xl font-bold">{title}</h2>
+          <h2 className="my-2 w-full text-left text-dark text-4xl font-bold">{title}</h2>
         </Link>
         <p className="my-2 font-medium text-dark">{summary}</p>
         <div className="mt-2 flex items-center">
@@ -75,7 +76,7 @@ const Project = ({ title, type, img, link, github }) => {
           target="_blank"
           className="hover:scale-105 duration-500"
         >
-          <h2 className="my-2 w-full text-left text-2xl font-bold">{title}</h2>
+          <h2 className="my-2 w-full text-left text-2xl text-dark font-bold">{title}</h2>
         </Link>
         <div className="mt-2 flex items-center">
           <Link href={github} target="_blank" className="w-10">
@@ -97,7 +98,9 @@ const Project = ({ title, type, img, link, github }) => {
 const Projects = () => {
   return (
     <section className="flex min-h-screen px-32 py-32">
-      <div className="grid mx-auto w-full grid-col-12 gap-8">
+      
+      <div className="grid mx-auto w-full">
+      <AnimatedContents>
         <div className="col-span-12">
           <FeaturedProject
             type="Frontend Project"
@@ -109,6 +112,8 @@ const Projects = () => {
             github="https://github.com/ThanHtikeZawGithub/Nike-E-Commerce-store-Demo.git"
           />
         </div>
+        </AnimatedContents>
+        <AnimatedContents>
         <div className="col-span-6">
         <Project
             type="Frontend Project"
@@ -118,6 +123,8 @@ const Projects = () => {
             github="https://github.com/ThanHtikeZawGithub/Nike-E-Commerce-store-Demo.git"
           />
             </div>
+            </AnimatedContents>
+            <AnimatedContents>
         <div className="col-span-6">
         <Project
             type="Frontend Project"
@@ -127,6 +134,8 @@ const Projects = () => {
             github="https://github.com/ThanHtikeZawGithub/Nike-E-Commerce-store-Demo.git"
           />
             </div>
+            </AnimatedContents>
+            <AnimatedContents>
         <div className="col-span-6">
         <FeaturedProject
             type="Frontend Project"
@@ -137,8 +146,9 @@ const Projects = () => {
             link="https://nike-e-commerce-store-demo.vercel.app/"
             github="https://github.com/ThanHtikeZawGithub/Nike-E-Commerce-store-Demo.git"
           />
-            </div>
-      </div>
+          </div>
+          </AnimatedContents>
+          </div>
     </section>
   );
 };

@@ -20,7 +20,7 @@ export default function HomePage() {
                           md:top-40 max-w-xl md:max-w-3xl md:mx-auto font-mont font-bold"
           >
             <Pattern1 className="absolute md:-bottom-12 md:right-12 md:w-100 md:h-100 dark:invert" />
-            <Pattern1 className="absolute md:top-24 md:-left-24 md:w-100 md:h-100 dark:invert" />
+       
             <h2 className="text-md font-mono font-bold text-gray-600 dark:text-primary3 md:text-xl mb-4">
               Hi. I'm
             </h2>
@@ -56,8 +56,8 @@ export default function HomePage() {
           </div>
         </div>
         <div className="bg-primary3 basis-2/5 md:basis-4/12 font-bold md:relative">
-          <Pattern1 className="absolute -right-[350px] top-24 dark:invert" />
-          <Pattern1 className="absolute -right-12 -bottom-56 dark:invert" />
+
+          <Pattern1 className="absolute -right-12 -bottom-56" />
           <div
             className="flex relative before:absolute before:border-2 before:border-zinc-800 
                           before:border-solid before:dark:border-primary

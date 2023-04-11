@@ -22,6 +22,7 @@ const AboutPage = () => {
        <Skill/>
        <Projects/>
        <Contact/>
+       
     </main>
     
     </>
