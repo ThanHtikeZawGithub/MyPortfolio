@@ -23,7 +23,7 @@ const AboutPage = () => {
        <Skill/>
        <Projects/>
        <Contact/>
-       <div className='fixed bottom-12 items-center text-center text-white bg-purple-900 right-12 border-x-2 border rounded-md border-dark'>
+       <div className='fixed bottom-12 items-center z-50 text-center text-white bg-yellow-600 right-12 border-x-2 border rounded-md border-dark'>
        <Link
             href='/'
           >

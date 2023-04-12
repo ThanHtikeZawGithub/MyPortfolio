@@ -53,16 +53,25 @@ export function Profile({className,...rest}) {
 
 export function Home({className,...rest}) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" 
-        viewBox="0 0 32 32" 
-        width='1rem' 
-        height='1rem' 
-        className={`w-12 h-12 ${className}`}
-        {...rest}>
-      <path d="M20 8l-6-5.26a3 3 0 00-4 0L4 8a3 3 0 00-1 2.26V19a3 3 0 003 3h12a3 3 0 003-3v-8.75A3 3 0 0020 8zm-6 12h-4v-5a1 1 0 011-1h2a1 1 0 011 1zm5-1a1 1 0 01-1 1h-2v-5a3 3 0 00-3-3h-2a3 3 0 00-3 3v5H6a1 1 0 01-1-1v-8.75a1 1 0 01.34-.75l6-5.25a1 1 0 011.32 0l6 5.25a1 1 0 01.34.75z"></path>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      className={`w-10 h-10 ${className}`}
+      {...rest}
+    >
+      <path
+        fill="none"
+        stroke="#200E32"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1.5"
+        d="M9.157 20.771v-3.066c0-.78.636-1.414 1.424-1.42h2.886c.792 0 1.434.636 1.434 1.42h0v3.076c0 .662.533 1.203 1.202 1.219h1.924c1.918 0 3.473-1.54 3.473-3.438h0V9.838a2.44 2.44 0 00-.962-1.905l-6.58-5.248a3.18 3.18 0 00-3.945 0L3.462 7.943A2.42 2.42 0 002.5 9.847v8.715C2.5 20.46 4.055 22 5.973 22h1.924c.685 0 1.241-.55 1.241-1.229h0"
+      ></path>
     </svg>
   );
-};
+}
 
 
 
@@ -592,6 +601,103 @@ export const FacebookIcon = ({className,...rest}) => (
     />
   </svg>
 );
+
+
+export function Address({className,...rest}) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      data-name="Layer 3"
+      viewBox="0 0 32 32"
+      className={`w-12 h-12 ${className}`}
+      {...rest}
+    >
+      <path
+        fill="none"
+        stroke="#0832ff"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="M15 11L6 11 6 26 26 26 26 11"
+      ></path>
+      <path fill="#0832ff" d="M6 11H8V26H6z"></path>
+      <path
+        fill="none"
+        stroke="#0832ff"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M9.5 25.5L9.5 11.5"
+      ></path>
+      <path
+        fill="none"
+        stroke="#0832ff"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="M22.46 12.31l-3.06 3.05-3.06-3.06a4.32 4.32 0 010-6.11h0a4.33 4.33 0 016.12 0h0a4.32 4.32 0 010 6.12z"
+      ></path>
+      <circle
+        cx="19.4"
+        cy="9.21"
+        r="2.01"
+        fill="none"
+        stroke="#0832ff"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      ></circle>
+    </svg>
+  );
+};
+
+export function Email({className, ...rest}) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      data-name="Layer 1"
+      viewBox="0 0 64 64"
+      className={`w-12 h-12 ${className}`}
+      {...rest}
+    >
+      <rect
+        width="33"
+        height="47"
+        x="15.5"
+        y="8.5"
+        fill="none"
+        stroke="#d13d61"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        rx="2"
+        ry="2"
+        transform="rotate(-90 32 32)"
+      ></rect>
+      <path
+        fill="none"
+        stroke="#d13d61"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="M9 17L32 33 55 17.5"
+      ></path>
+    </svg>
+  );
+}
+
+export function Phone({className,...rest}) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" 
+        viewBox="0 0 512 512"
+        className={`w-12 h-12 ${className}`}
+        {...rest}
+        >
+      <path
+        fill="#134563"
+        d="M340.4 0h-170c-30.3 0-55 24.7-55 55v402c0 30.3 24.7 55 55 55h170c30.3 0 55-24.7 55-55V55c0-30.3-24.6-55-55-55zM234.7 22.6h42.2c4.9 0 8.8 4.5 8.8 10s-3.9 10-8.8 10h-42.2c-4.9 0-8.8-4.5-8.8-10s3.9-10 8.8-10zm-39.9-1.5c6.3 0 11.5 5.1 11.5 11.5S201.1 44 194.8 44s-11.5-5.1-11.5-11.5 5.1-11.4 11.5-11.4zm61 456c-10.2 0-18.4-8.2-18.4-18.4s8.2-18.4 18.4-18.4 18.4 8.2 18.4 18.4-8.2 18.4-18.4 18.4zm107.6-47.6H147.5V66.6h215.9v362.9z"
+      ></path>
+    </svg>
+  );
+}
 
 
 

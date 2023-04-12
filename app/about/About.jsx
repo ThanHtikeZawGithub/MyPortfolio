@@ -1,51 +1,42 @@
 "use client";
 import React, { useState } from "react";
 import { aboutInfo } from "../Info";
-import {motion} from 'framer-motion';
+import { motion } from "framer-motion";
+import AboutCard from "../AboutCard";
 
 const About = () => {
-  const [selected, setSelected] = useState(0);
+  const [showInfo, setShowInfo] = useState(true);
+
   return (
-    <section className="md:max-w-8xl min-h-screen md:mx-auto section">
-      <div className="flex flex-wrap flex-col md:flex-row mx-auto md:items-center md:justify-between px-8 gap-16">
-          <div className="flex md:flex-col mt-8 md:border-l">
-            {aboutInfo.map((exp) => {
+    <section className="md:max-w-8xl flex flex-col min-h-screen md:mx-auto pt-20">
+      <h2 className="title mb-24">_About Me</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-1 px-8 h-full w-full">
+        <div className="flex flex-col">
+          <h3 className="text-3xl md:text-5xl mb-8">My Career</h3>
+          <p className="max-w-md justify-center">lorem ipsum lorem ipsum lorem ipsum lorem ipsu 
+          lorem ipsum lorem ipsum lorem ipsum lorem ipsu 
+          lorem ipsum lorem ipsum lorem ipsum lorem ipsu 
+          lorem ipsum lorem ipsum lorem ipsum lorem ipsu 
+          lorem ipsum lorem ipsum lorem ipsum lorem ipsu 
+          lorem ipsum lorem ipsum lorem ipsum lorem ipsu 
+          </p>
+        </div>
+        <div>
+          <h3 className="text-xl md:text-2xl text-center font-bold font-raleway">
+            Qualifications
+            </h3>
+          <div>
+            {aboutInfo.map((val, id) => {
               return (
-                <ul className="px-2">
-                  <li
-                    key={exp.id}
-                    className={`${
-                    exp.id === selected
-                        ? "text-primary3 transition-all duration-500 md:before:h-full before:bg-primary3 before:h-[2px]"
-                        : "dark:text-primary"
-                    } relative font-raleway tracking-widest font-semibold text-xs md:text-xl list-none 
-                    p-4 md:h-16 before:absolute before:w-full w-full before:h-1 md:before:w-1 before:bottom-0 
-                    md:before:-left-2 md:before:h-full cursor-pointer`}
-                    onClick={()=>setSelected(exp.id)}
-                  >
-                    {exp.title}
-                  </li>
-                </ul>
+                <AboutCard
+                id={id}
+                title={val.title}
+                description={val.description}
+                />
               );
             })}
           </div>
-          <div className="max-w-lg">
-            {aboutInfo[selected].description.map((info) => (
-              <motion.li
-              initial={{y:-50,opacity:0}}
-              animate={{
-                y:0,
-                opacity:1,
-                transition:{
-                  duration:0.8
-                }
-              }}
-              className="w-full font-open text-sm px-1 md:text-lg list-none dark:text-primary" 
-              key={info}>
-                {info}
-              </motion.li>
-            ))}
-          </div>
+        </div>
       </div>
     </section>
   );

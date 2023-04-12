@@ -1,37 +1,57 @@
 
-
-
 export const aboutInfo = [
-    {
-      id:0,
-      title: "ABOUT ME",
-      description: [
-        "Hi I'm Than Htike Zaw, a frontend developer and full-stack developer in the present.",
-        "In the past, I was an enginnering student(since 2014) from MTU specialized in Mechanical Engineering.",
-      ],
-    },
     {
       id:1,
       title: "EXPERIENCE",
       description: [
-        "Automotive Engineer(intern) - Responsible for managing work space",
-        "Japanese Instructor - Taught N5 and N4 level through online",
-        "Freelance Web Developer - Mainly Frontend Design using Reactjs, Nextjs",
+        {
+          cap:'Automotive Engineer (internship)',
+          date:'(Dec 2019)-(Feb 2020)',
+          des:'Responsible for managing work space'
+        },
+        {
+          cap:'Japanese Instructor (Full-time)',
+          date:'(Aug 2021)-(Sep 2022)',
+          des:'Taught N5 and N4 level through online',
+        },
+        {
+          cap:'Frontend Developer (freelance)',
+          date:'(Oct 2022)-present',
+          des:'Mainly Frontend Design using Reactjs, Nextjs',
+        },
       ],
     },
     {
       id:2,
       title: "EDUCATION",
       description: [
-        "Bachelor of Mechanical Engineering (2014-2020) - Mandalay Technological University ",
-        "CS50 - Harvard University Edx",
+        {
+        cap:'Mechanical Engineering (MTU)',
+        date:'2014 - 2020',
+        des:'Specialized in Mechanical Engineering at Mandalay Technological University',
+        },
+        {
+          cap:'CS50 - Harvard University Edx',
+          date:'2022',
+          des:'Computer Science , data structures and algorithms',
+        }
       ],
     },
     {
       id:3,
       title: "LANGAUAGE",
-      description: ["English - UpperIntermediate (comfortable to Read, Write and Speak)", 
-                    "Japanese - N2+  "],
+      description: [
+        {
+          cap:'English',
+          date:'UpperIntermediate',
+          des:'Comfortable to read, write and speak',
+        },
+        {
+          cap:'Japanese',
+          date:'N2',
+          des:'progressing JLPT N2 & N1',
+        },
+      ],
     },
   ];
 
@@ -101,11 +121,6 @@ export const backend = [
           src:'/assets/nextjs.png',
         },
         {
-   
-          src:'/assets/tailwind.png',
-        },
-        {
-      
           src:'/assets/typescript.png',
         },
       ],
