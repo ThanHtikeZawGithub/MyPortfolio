@@ -3,9 +3,14 @@
 @tailwind utilities;
 
 
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+}
+
 .btn {
   background: none;
-  border: 1px solid #17BE74;
+  border: 1px solid #14a765;
   padding: 10px 20px;
   min-width: 200px;
   cursor: pointer;
@@ -41,15 +46,6 @@
   transform: scaleX(1);
 }
 
-@layer base {
-  .section {
-    @apply mx-auto w-full px-12 py-8 md:py-64 md:h-screen flex items-center justify-center;
-  }
-  .title {
-    @apply mx-auto w-full text-4xl text-center tracking-wider font-mont dark:text-primary3 text-dark font-bold
-  }
-}
-
 .swiper-wrapper{
   margin-bottom: 52px;
 }
@@ -70,7 +66,6 @@
   width: 100%;
   background-color: #17BE74;
   transition: all 0.3s;
-
 }
 
 .swiper-horizontal> .swiper-pagination-bullets .swiper-pagination-bullet{
@@ -93,3 +88,13 @@
   height: 15px;
   top: 2px;
 }
+
+@layer base {
+  .section {
+    @apply mx-auto w-full px-12 py-8 md:py-64 md:h-screen flex items-center justify-center;
+  }
+  .title {
+    @apply mx-auto w-full text-4xl text-center tracking-wider font-mont dark:text-primary3 text-dark font-bold
+  }
+}
+

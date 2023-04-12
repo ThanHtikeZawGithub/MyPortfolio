@@ -38,6 +38,33 @@ export const Arrow = ({className,...rest}) => {
   );
 }
 
+export function Profile({className,...rest}) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" 
+        viewBox="0 0 32 32" 
+        width='1rem' 
+        height='1rem' 
+        className={`w-8 h-8 ${className}`}
+        {...rest}>
+      <path d="M22 7c0-3.309-2.691-6-6-6s-6 2.691-6 6 2.691 6 6 6 6-2.691 6-6zM12 7c0-2.206 1.794-4 4-4s4 1.794 4 4-1.794 4-4 4-4-1.794-4-4zM5.213 25.137V28c0 1.654 1.346 3 3 3h15.574c1.654 0 3-1.346 3-3v-2.863c0-5.949-4.839-10.787-10.787-10.787S5.213 19.188 5.213 25.137zM16 16.35c4.846 0 8.787 3.941 8.787 8.787V28c0 .551-.448 1-1 1H8.213c-.552 0-1-.449-1-1v-2.863c0-4.846 3.941-8.787 8.787-8.787z"></path>
+    </svg>
+  );
+};
+
+export function Home({className,...rest}) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" 
+        viewBox="0 0 32 32" 
+        width='1rem' 
+        height='1rem' 
+        className={`w-12 h-12 ${className}`}
+        {...rest}>
+      <path d="M20 8l-6-5.26a3 3 0 00-4 0L4 8a3 3 0 00-1 2.26V19a3 3 0 003 3h12a3 3 0 003-3v-8.75A3 3 0 0020 8zm-6 12h-4v-5a1 1 0 011-1h2a1 1 0 011 1zm5-1a1 1 0 01-1 1h-2v-5a3 3 0 00-3-3h-2a3 3 0 00-3 3v5H6a1 1 0 01-1-1v-8.75a1 1 0 01.34-.75l6-5.25a1 1 0 011.32 0l6 5.25a1 1 0 01.34.75z"></path>
+    </svg>
+  );
+};
+
+
 
 export const Pattern1 = ({className,...rest}) => {
   return (
@@ -435,10 +462,10 @@ export const GithubIcon = ({ className, ...rest }) => (
   export const LinkArrow = ({ className, ...rest }) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={24}
-      height={24}
+      width={10}
+      height={10}
       viewBox="0 0 24 24"
-      className={`w-full h-auto ${className}`}
+      className={`w-5 h-5 ${className}`}
       {...rest}
     >
       <path fill="none" d="M0 0h24v24H0z" />

@@ -2,11 +2,12 @@
 import Head from 'next/head';
 import React from 'react'
 import PageTransition from '../PageTransition';
-import AnimatedText from '../AnimatedText';
 import About from './About';
 import Skill from './Skill';
 import Projects from './Projects';
 import Contact from './Contact';
+import { Home } from '../Icons';
+import Link from 'next/link';
 
 
 const AboutPage = () => {
@@ -22,6 +23,13 @@ const AboutPage = () => {
        <Skill/>
        <Projects/>
        <Contact/>
+       <div className='fixed bottom-12 items-center text-center text-white bg-purple-900 right-12 border-x-2 border rounded-md border-dark'>
+       <Link
+            href='/'
+          >
+            <Home/>
+        </Link>
+       </div>
        
     </main>
     

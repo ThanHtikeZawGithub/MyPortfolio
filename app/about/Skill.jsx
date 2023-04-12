@@ -32,7 +32,7 @@ const Skill = () => {
           },
         }}
         modules={[Pagination]}
-        className="mySwiper relative text-center">
+        className="mySwiper relative text-center mx-8">
          {skills.map((skill,index)=>{
           return (
             <SwiperSlide key={index} className="bg-dark text-left py-4 px-4 rounded-md ">

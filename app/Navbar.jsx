@@ -1,15 +1,12 @@
 "use client";
-import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { LinkedInIcon, GithubIcon, FacebookIcon, InstagramIcon, SunIcon, MoonIcon } from "./Icons";
 import { motion } from "framer-motion";
-import ArrowNav from "./ArrowNav";
-import {usePathname } from 'next/navigation';
 import useDarkTheme from "./useDarkTheme";
 
 const Navbar = () => {
   const [isTopOfPage, setIsTopOfPage] = useState(true);
-  const pathname = usePathname();  
+ 
   const [mode, setMode] = useDarkTheme();
   useEffect(() => {
     
@@ -25,34 +22,15 @@ const Navbar = () => {
     <header
       className={`${
         isTopOfPage ? "fixed top-0 w-full " : "fixed top-0 backdrop-blur-2xl "
-      }top-0 w-full px-20 py-3 font-medium z-20 flex items-center justify-between`}
+      }w-full px-8 md:px-16 py-3 font-medium z-20 flex items-center justify-between`}
     >
-      <nav className="flex items-center justify-end">
-        <div className=" flex items-center gap-8">
-          <div>
+      <nav className="flex items-center justify-between">
+        <div className=" flex items-center justify-between">
             <img src="/assets/logo.png" alt="logo" className="w-12 h-auto" />
-          </div>
-          <div className="ml-32 gap-8 text-dark hidden md:flex md:items-center">
-            <ArrowNav className={"ml-72"} />
-          {pathname === '/' ? (
-              <Link
-              href='/about'
-              className={`text-xl dark:text-primary3 font-semibold tracking-widest font-open`}
-            >
-              About
-            </Link>
-          ):(
-            <Link
-            href='/'
-            className={`text-xl dark:text-primary3 font-semibold tracking-widest font-open`}
-          >
-            Home
-          </Link>
-          )}
-          </div>
-        </div>
+         </div>
       </nav>
-      <nav className="hidden md:flex md:items-center gap-4">
+      <nav className="flex items-center gap-4">
+        <div className="hidden md:flex items-center justify-between gap-3">
         <motion.a
           href="https://github.com/ThanHtikeZawGithub"
           target={"_blank"}
@@ -85,6 +63,8 @@ const Navbar = () => {
         >
           <InstagramIcon />
         </motion.a>
+        </div>
+        <div>
         <button onClick={()=> setMode(mode === 'dark' ? 'light':'dark')}
         className="flex items-center justify-between rounded-full p-1 bg-primary1">
             {mode === 'dark' ? (
@@ -93,6 +73,7 @@ const Navbar = () => {
               <SunIcon/>
             )}
         </button>
+        </div>
       </nav>
     </header>
   );
