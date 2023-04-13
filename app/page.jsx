@@ -25,7 +25,7 @@ export default function HomePage() {
             <p className="text-zinc-600 text-center md:text-start dark:text-primary3 font-raleway my-4 text-xs max-w-sm flex-wrap md:text-base ">
               Dedicated to craft ideas into solid applications, Always learning new things and developing creative ideas 
             </p>
-            <div className="flex items-center mt-2">
+            <div className="flex items-center my-2">
               <Link
                 href="/resume.pdf"
                 target={"_blank"}
@@ -43,7 +43,7 @@ export default function HomePage() {
             className="flex relative before:absolute before:border-2 before:border-zinc-800 
                           before:border-solid before:dark:border-primary
                           md:before:-right-4 md:before:-top-4 md:before:w-full md:before:h-full 
-                          before:z-20 justify-center my-8 items-center md:absolute md:top-40 md:-left-20 -top-12 hover:saturate-50 transition-all duration-700 ease-in "
+                          before:z-20 justify-center my-8 items-center md:absolute md:top-40 md:-left-20 -top-10 hover:saturate-50 transition-all duration-700 ease-in "
           >
             <Image
               src="/assets/profile_5.png"
