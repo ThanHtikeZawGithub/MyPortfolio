@@ -37,13 +37,13 @@ const AboutPage = () => {
        <Skill/>
        <Projects/>
        <Contact/>
-       <div className='fixed bottom-8 items-center  z-40 text-center text-white bg-yellow-600 right-8 p-2 border shadow-md shadow-dark rounded-md border-dark'>
+       <button className='fixed bottom-8 items-center  z-40 text-center text-white bg-yellow-600 right-8 p-2 border shadow-md shadow-dark rounded-md border-dark'>
        <Link
             href='/'
           >
             <Home/>
         </Link>
-       </div>
+       </button>
        
     </main>
     

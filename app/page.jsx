@@ -1,21 +1,18 @@
 "use client";
 import Link from "next/link";
-import { Home, LinkArrow, Pattern1, Profile } from "./Icons";
+import { LinkArrow, Pattern1, Profile } from "./Icons";
 import PageTransition from "./PageTransition";
-import { useState } from "react";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
+
 
 export default function HomePage() {
-  const [isHomePage, setIsHomePage] = useState(true);
-  const pathname = usePathname();  
   return (
     <>
       <PageTransition />
       <div className="flex flex-col h-screen w-full md:flex-row overflow-hidden ">
         <div className="bg-primary dark:bg-zinc-800 px-4 flex basis-3/5 md:basis-8/12 md:relative transition-all duration-700">
           <div
-            className="mx-auto py-2 flex flex-col justify-center items-center md:items-start top-20 
+            className="mx-auto py-2 flex flex-col justify-center items-center md:items-start top-28 
                           md:top-40 max-w-xl md:max-w-3xl md:mx-auto font-mont font-bold"
           >
        
@@ -61,13 +58,13 @@ export default function HomePage() {
             />
             <Pattern1 className="absolute left-56 top-24 md:left-32 md:top-48" />
           </div>
-          <div className="fixed bottom-8 right-8 bg-yellow-600 z-40 border border-solid border-dark rounded-md p-2 shadow-black shadow-md">
+          <button className="fixed bottom-8 right-8 bg-yellow-600 z-40 border border-solid border-dark rounded-md p-2 shadow-black shadow-md">
               <Link
               href='/about'
             >
               <Profile/>
             </Link>
-          </div>
+          </button>
         </div>
       </div>
     </>

@@ -11,7 +11,7 @@ const Skill = () => {
   const [clickIcon, setClickIcon] = useState(false);
   return (
     <section className="min-h-screen -z-20 py-1 md:px-24">
-      <div className="title my-16">_Skills
+      <div className="title my-8">_Services
       </div>
       <Swiper 
         pagination={{

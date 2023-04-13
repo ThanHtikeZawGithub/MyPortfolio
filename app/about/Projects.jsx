@@ -3,8 +3,8 @@ import ProjectCard from "../ProjectCard";
 
 const Projects = () => {
   return (
-    <section className="flex min-h-screen w-full px-8 md:px-32 md:py-32 py-8 overflow-hidden">
-      
+    <section className="flex flex-col min-h-screen w-full px-8 md:px-24 overflow-hidden">
+      <h1 className="title my-8">_Projects</h1>
       <div className="grid grid-cols-1 mx-auto items-center md:grid-cols-2 w-full gap-12">
      
         <div className="">
@@ -24,7 +24,7 @@ const Projects = () => {
             title="Booking Application"
             summary="#REACT #EXPRESS #TAILWINDCSS #MONGODB #RESTful"
             img="/assets/bookingpng.JPG"
-            description= 'Functional Online Booking where u can create booking'
+            description= 'Functional Online Booking Website where u can create actual booking'
             link="https://booking-app-demo.vercel.app/"
             github="https://github.com/ThanHtikeZawGithub/Booking-App-Demo"
           />
@@ -37,7 +37,7 @@ const Projects = () => {
             title="The Daily News"
             summary="#NEXT #TAILWINDCSS #GRAPHQL"
             img="/assets/project-3.JPG"
-            description= 'Fetching news using nextjs + grapQL'
+            description= 'Fetching news using nextjs + graphQL, since its free subscription, so it has fetch limits'
             link="https://dailynews-blue.vercel.app/"
             github="https://github.com/ThanHtikeZawGithub/News-App"
           />

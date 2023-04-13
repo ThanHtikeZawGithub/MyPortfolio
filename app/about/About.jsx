@@ -22,7 +22,7 @@ const About = () => {
           </p>
         </div>
         <div>
-          <h3 className="text-xl text-primary3 md:text-2xl md:px-16 text-center font-bold font-raleway">
+          <h3 className="text-xl text-primary3 mt-4 md:text-2xl md:px-16 text-center font-bold font-raleway">
             Qualifications
             </h3>
           <div>

@@ -21,7 +21,7 @@ const ContactForm = () => {
     onSubmit={onSubmit}
     action="https://formsubmit.co/69209e445c641faf20262c8d68f03fd1"
     method="POST"
-    className="px-2"
+    className="flex flex-col items-center md:items-start w-full"
   >
     <input
       className="w-full font-semibold dark:bg-zinc-700 text-primary3 placeholder-opaque-black p-3 rounded-md"
@@ -77,7 +77,7 @@ const ContactForm = () => {
 
     <button
        type="submit"
-       className="btn font-semibold mt-6 tracking-widest">
+       className="btn items-center font-semibold mt-6 tracking-widest">
           Send Me a Message  &rarr;
     </button>
   </form>

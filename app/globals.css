@@ -92,11 +92,9 @@
 
 
 @layer base {
-  .section {
-    @apply mx-auto w-full px-12 py-8 md:py-24 md:h-screen flex items-center justify-center;
   }
   .title {
     @apply mx-auto w-full text-4xl text-center tracking-wider font-mont dark:text-primary3 text-dark font-bold
   }
-}
+
 

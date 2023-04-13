@@ -29,8 +29,8 @@ const ProjectCard = ({ title, type, img, link, github, summary, description }) =
             className=""
           >
             <h2 className="my-2 w-full text-left text-xl font-bold">{title}</h2>
-            <p className="my-3 font-semibold font-mono tracking-widest">{summary}</p>
-            <p className="text-sm">{description}</p>
+            <p className="my-3 text-sm md:text-lg font-semibold font-mono tracking-widest">{summary}</p>
+            <p className="text-sm font-medium">{description}</p>
           </Link>
           <div className="my-6 flex items-center justify-between gap-8">
             <Link href={github} target="_blank" className="w-10">
