@@ -7,7 +7,7 @@ import AboutCard from "../AboutCard";
 const About = () => {
   return (
     <section className="md:max-w-8xl flex flex-col min-h-screen md:mx-auto pt-20">
-      <h2 className="title mb-24">_About Me</h2>
+      <h2 className="title mb-24 md:mb-12">_About Me</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-1 px-8 h-full w-full">
         <div className="flex flex-col md:px-8">
           <h3 className="text-xl text-primary3 my-4 md:text-2xl md:px-16 text-center font-bold font-raleway">My Career</h3>
