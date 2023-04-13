@@ -58,7 +58,7 @@ export function Home({className,...rest}) {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      className={`w-10 h-10 ${className}`}
+      className={`w-8 h-8 ${className}`}
       {...rest}
     >
       <path

@@ -1,63 +1,14 @@
 import React from "react";
-import Link from "next/link";
-import Image from "next/image";
-import { GithubIcon } from "../Icons";
-
-
-const Project = ({ title, type, img, link, github, summary, description }) => {
-  return (
-    <article
-      className="grid bg-primary dark:bg-dark w-full mx-auto rounded-3xl"
-    >
-      <Link
-        href={link}
-        target="_blank"
-        className="cursor-pointer overflow-hidden rounded-b rounded-3xl"
-      >
-        <Image
-          src={img}
-          alt={title}
-          width={300}
-          height={350}
-          className="w-full h-auto object-cover hover:scale-110 transition-all duration-700"
-        />
-      </Link>
-      <div className="flex flex-col items-start justify-between px-4">
-        <span className="text-primary3 font-medium text-sm mt-2">{type}</span>
-        <Link
-          href={link}
-          target="_blank"
-          className=""
-        >
-          <h2 className="my-2 w-full text-left text-xl font-bold">{title}</h2>
-          <p className="my-3 font-semibold font-mono tracking-widest">{summary}</p>
-          <p className="text-sm">{description}</p>
-        </Link>
-        <div className="my-6 flex items-center justify-between gap-8">
-          <Link href={github} target="_blank" className="w-10">
-            <GithubIcon />
-          </Link>
-          <Link
-            href={link}
-            target="_blank"
-            className="btn text-center text-xs tracking-widest font-semibold"
-          >
-            Live Demo
-          </Link>
-        </div>
-      </div>
-    </article>
-  );
-};
+import ProjectCard from "../ProjectCard";
 
 const Projects = () => {
   return (
-    <section className="flex min-h-screen w-full px-8 md:px-32 md:py-32 overflow-hidden">
+    <section className="flex min-h-screen w-full px-8 md:px-32 md:py-32 py-8 overflow-hidden">
       
       <div className="grid grid-cols-1 mx-auto items-center md:grid-cols-2 w-full gap-12">
      
         <div className="">
-          <Project
+          <ProjectCard
             type="Frontend Development"
             title="Nike E-commerce App Demo"
             summary="#REACT #REDUX #TAILWINDCSS"
@@ -68,7 +19,7 @@ const Projects = () => {
           />
         </div>
         <div className="">
-        <Project
+        <ProjectCard
             type="FullStack Development"
             title="Booking Application"
             summary="#REACT #EXPRESS #TAILWINDCSS #MONGODB #RESTful"
@@ -81,7 +32,7 @@ const Projects = () => {
            
            
         <div className="">
-        <Project
+        <ProjectCard
             type="Backend Development with Nextjs"
             title="The Daily News"
             summary="#NEXT #TAILWINDCSS #GRAPHQL"
@@ -94,7 +45,7 @@ const Projects = () => {
            
            
         <div className="">
-        <Project
+        <ProjectCard
             type="Landing Page"
             title="TravelWs"
             img="/assets/project-4.jpg"

@@ -32,7 +32,7 @@ export default function HomePage() {
               <Link
                 href="/resume.pdf"
                 target={"_blank"}
-                className="btn flex items-center justify-center text-xs tracking-widest font-semibold dark:text-primary"
+                className="btn btn-small md:btn flex items-center justify-center text-xs tracking-widest font-semibold dark:text-primary"
                 download={true}
               >
                 Resume 
@@ -61,7 +61,7 @@ export default function HomePage() {
             />
             <Pattern1 className="absolute left-56 top-24 md:left-32 md:top-48" />
           </div>
-          <div className="fixed bottom-12 right-12 bg-yellow-600 z-50 border border-solid border-dark rounded-md p-3 shadow-black shadow-md">
+          <div className="fixed bottom-8 right-8 bg-yellow-600 z-40 border border-solid border-dark rounded-md p-2 shadow-black shadow-md">
               <Link
               href='/about'
             >

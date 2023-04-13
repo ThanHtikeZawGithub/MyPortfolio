@@ -15,10 +15,10 @@ const AboutCard = (props) => {
       <div className="border-b border-dark py-6 border-x">
         {
             props.description.map((val, index)=>(
-                <div key={index} className='md:px-2 px-1'>
+                <div key={index} className='md:px-2 px-2'>
                 <div className='flex items-center justify-between'>
-                    <h1 className='font-bold text-base text-primary3 font-open'>{val.cap}</h1>
-                    <span className='font-semibold text-sm font-raleway'>{val.date}</span>
+                    <h1 className='font-bold text-sm md:text-base text-primary3 font-open'>{val.cap}</h1>
+                    <span className='font-semibold text-xs md:text-sm font-raleway'>{val.date}</span>
                 </div>
                 <div className='pb-3 font-semibold text-sm font-open'>
                     {val.des}

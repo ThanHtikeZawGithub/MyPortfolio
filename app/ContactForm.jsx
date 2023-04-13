@@ -77,7 +77,7 @@ const ContactForm = () => {
 
     <button
        type="submit"
-       className="btn font-semibold mt-6">
+       className="btn font-semibold mt-6 tracking-widest">
           Send Me a Message  &rarr;
     </button>
   </form>

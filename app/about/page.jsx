@@ -1,6 +1,6 @@
 'use client'
 import Head from 'next/head';
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import PageTransition from '../PageTransition';
 import About from './About';
 import Skill from './Skill';
@@ -11,6 +11,20 @@ import Link from 'next/link';
 
 
 const AboutPage = () => {
+  const [isloading,setIsloading] = useState(true);
+
+  useEffect(()=>{
+    setIsloading(false);
+  },[]);
+
+  if (isloading){
+    return (
+      <div className='h-screen w-full bg-primary3 flex items-center justify-center text-3xl font-bold'>
+        Loading...
+      </div>
+    )
+  };
+
   return (
     <>
     <Head>
@@ -23,7 +37,7 @@ const AboutPage = () => {
        <Skill/>
        <Projects/>
        <Contact/>
-       <div className='fixed bottom-12 items-center z-50 text-center text-white bg-yellow-600 right-12 border-x-2 border rounded-md border-dark'>
+       <div className='fixed bottom-8 items-center  z-40 text-center text-white bg-yellow-600 right-8 p-2 border shadow-md shadow-dark rounded-md border-dark'>
        <Link
             href='/'
           >
