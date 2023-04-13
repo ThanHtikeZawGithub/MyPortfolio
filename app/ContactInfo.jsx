@@ -3,7 +3,7 @@ import { Address, Email, Phone } from './Icons'
 
 const ContactInfo = () => {
   return (
-    <div className="flex flex-col px-8">
+    <div className="flex flex-col px-5 md:px-8">
             <h3 className='text-primary3 text-xl font-open font-semibold'>
               Connect with me.
             </h3>
