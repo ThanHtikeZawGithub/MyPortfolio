@@ -13,7 +13,7 @@ const Projects = () => {
             title="Nike E-commerce App Demo"
             summary="#REACT #REDUX #TAILWINDCSS"
             description= 'Responsive Design and Frontend development for an ecommerce website'
-            img="/assets/project-1.jpg"
+            img="/assets/project-1.JPG"
             link="https://nike-e-commerce-store-demo.vercel.app/"
             github="https://github.com/ThanHtikeZawGithub/Nike-E-Commerce-store-Demo.git"
           />
@@ -23,7 +23,7 @@ const Projects = () => {
             type="FullStack Development"
             title="Booking Application"
             summary="#REACT #EXPRESS #TAILWINDCSS #MONGODB #RESTful"
-            img="/assets/bookingpng.jpg"
+            img="/assets/bookingpng.JPG"
             description= 'Functional Online Booking where u can create booking'
             link="https://booking-app-demo.vercel.app/"
             github="https://github.com/ThanHtikeZawGithub/Booking-App-Demo"
@@ -36,7 +36,7 @@ const Projects = () => {
             type="Backend Development with Nextjs"
             title="The Daily News"
             summary="#NEXT #TAILWINDCSS #GRAPHQL"
-            img="/assets/project-3.jpg"
+            img="/assets/project-3.JPG"
             description= 'Fetching news using nextjs + grapQL'
             link="https://dailynews-blue.vercel.app/"
             github="https://github.com/ThanHtikeZawGithub/News-App"
@@ -48,7 +48,7 @@ const Projects = () => {
         <ProjectCard
             type="Landing Page"
             title="TravelWs"
-            img="/assets/project-4.jpg"
+            img="/assets/project-4.JPG"
             summary="#REACT #CSS"
             description= 'Simple website template desing with only using react'
             link="https://travel-with-us-two.vercel.app/"
