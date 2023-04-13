@@ -8,21 +8,21 @@ const ContactInfo = () => {
               Connect with me.
             </h3>
             <div className='flex flex-col justify-center gap-3 my-8'>
-              <div className='flex items-center gap-12'>
+              <div className='flex items-center gap-4'>
               <Phone/>
               <div className='flex flex-col justify-start'>
                 <h3 className='font-semibold '>Phone</h3>
                 <p className='text-sm font-medium'>09-762695080</p>
               </div>
             </div>
-            <div className='flex items-center gap-12'>
-              <Email/>
+            <div className='flex items-center gap-4'>
+              <Email />
               <div className='flex flex-col justify-start'>
                 <h3 className='font-semibold'>Email</h3>
                 <p className='text-sm font-medium'>yukihirasouma741@gmail.com</p>
               </div>
             </div>
-            <div className='flex items-center gap-12'>
+            <div className='flex items-center gap-4'>
               <Address/>
               <div className='flex flex-col justify-start'>
                 <h3 className='font-semibold'>Address</h3>

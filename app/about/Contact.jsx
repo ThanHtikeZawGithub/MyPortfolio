@@ -7,7 +7,7 @@ import { FacebookIcon, InstagramIcon, LinkedInIcon } from "../Icons";
 const Contact = () => {
   return (
     <section>
-      <div className="mx-auto px-8">
+      <div className="mx-auto px-8 pt-24 min-h-screen">
         <h1 className="text-3xl top-0 py-6 font-extrabold text-center text-dark dark:text-primary3 text-clip tracking-wider font-mont">
           _Say Hello
         </h1>

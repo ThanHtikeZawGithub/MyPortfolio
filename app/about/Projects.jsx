@@ -22,7 +22,7 @@ const Projects = () => {
         <ProjectCard
             type="FullStack Development"
             title="Booking Application"
-            summary="#REACT #EXPRESS #TAILWINDCSS #MONGODB #RESTful"
+            summary="#REACT #EXPRESS #TAILWINDCSS #MONGODB"
             img="/assets/bookingpng.JPG"
             description= 'Functional Online Booking Website where u can create actual booking'
             link="https://booking-app-demo.vercel.app/"
@@ -50,7 +50,7 @@ const Projects = () => {
             title="TravelWs"
             img="/assets/project-4.JPG"
             summary="#REACT #CSS"
-            description= 'Simple website template desing with only using react'
+            description= "Simple website template desing with only using react. It's about travel agency in Bagan"
             link="https://travel-with-us-two.vercel.app/"
             github="https://github.com/ThanHtikeZawGithub/Travel-Landing-Template"
           />
