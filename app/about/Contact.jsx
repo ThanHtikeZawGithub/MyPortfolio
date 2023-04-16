@@ -7,8 +7,8 @@ import { FacebookIcon, InstagramIcon, LinkedInIcon } from "../Icons";
 const Contact = () => {
   return (
     <section>
-      <div className="mx-auto px-8 pt-24 min-h-screen">
-        <h1 className="text-3xl top-0 py-6 font-extrabold text-center text-dark dark:text-primary3 text-clip tracking-wider font-mont">
+      <div className="mx-auto px-8 pt-24 md:min-h-screen">
+        <h1 className="title top-0 py-6 ">
           _Say Hello
         </h1>
         <div className="block md:flex md:basis-1/2 md:justify-center md:gap-16">
@@ -25,9 +25,24 @@ const Contact = () => {
             <p className="font-semibold text-sm md:text-lg text-primary font-open">Full-stack developer</p>
           </div>
           <div className="flex items-center justify-between gap-1 md:gap-4">
-            <FacebookIcon />
-            <InstagramIcon />
-            <LinkedInIcon/>
+          <a
+          href="https://www.linkedin.com/in/than-htike-zaw-2653b71aa/"
+          target={"_blank"}
+        >
+          <LinkedInIcon />
+        </a>
+        <a
+          href="https://www.facebook.com/profile.php?id=100085454234498"
+          target={"_blank"}
+        >
+          <FacebookIcon />
+        </a>
+        <a
+          href="https://instagram.com/thanh_zaw?igshid=YmMyMTA2M2Y="
+          target={"_blank"}
+        >
+          <InstagramIcon />
+        </a>
           </div>
         </div>
         <div className='py-5 text-center'>

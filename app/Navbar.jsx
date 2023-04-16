@@ -40,7 +40,7 @@ const Navbar = () => {
           <GithubIcon />
         </motion.a>
         <motion.a
-          href="/"
+          href="https://www.linkedin.com/in/than-htike-zaw-2653b71aa/"
           target={"_blank"}
           whileHover={{ y: -4 }}
           whileTap={{ scale: 0.9 }}
@@ -48,7 +48,7 @@ const Navbar = () => {
           <LinkedInIcon />
         </motion.a>
         <motion.a
-          href="/"
+          href="https://www.facebook.com/profile.php?id=100085454234498"
           target={"_blank"}
           whileHover={{ y: -4 }}
           whileTap={{ scale: 0.9 }}
@@ -56,7 +56,7 @@ const Navbar = () => {
           <FacebookIcon />
         </motion.a>
         <motion.a
-          href="/"
+          href="https://instagram.com/thanh_zaw?igshid=YmMyMTA2M2Y="
           target={"_blank"}
           whileHover={{ y: -4 }}
           whileTap={{ scale: 0.9 }}

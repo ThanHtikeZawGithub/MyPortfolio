@@ -94,7 +94,7 @@
 @layer base {
   }
   .title {
-    @apply mx-auto w-full text-4xl text-center tracking-wider font-mont dark:text-primary3 text-dark font-bold
+    @apply mx-auto w-full text-3xl text-center font-alegreya dark:text-primary3 text-dark font-bold
   }
 
 

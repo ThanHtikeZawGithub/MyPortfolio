@@ -1,6 +1,6 @@
 'use client'
 import Head from 'next/head';
-import React, { useState, useEffect } from 'react'
+import React, { Suspense } from 'react'
 import PageTransition from '../PageTransition';
 import About from './About';
 import Skill from './Skill';
@@ -11,19 +11,6 @@ import Link from 'next/link';
 
 
 const AboutPage = () => {
-  const [isloading,setIsloading] = useState(true);
-
-  useEffect(()=>{
-    setIsloading(false);
-  },[]);
-
-  if (isloading){
-    return (
-      <div className='h-screen w-full bg-primary3 flex items-center justify-center text-3xl font-bold'>
-        Loading...
-      </div>
-    )
-  };
 
   return (
     <>
@@ -33,6 +20,7 @@ const AboutPage = () => {
     </Head>
     <PageTransition/>
     <main className='bg-primary dark:bg-zinc-800 text-dark dark:text-primary transition-all duration-700'>
+
        <About/>
        <Skill/>
        <Projects/>
@@ -44,9 +32,7 @@ const AboutPage = () => {
             <Home/>
         </Link>
        </button>
-       
     </main>
-    
     </>
   )
 }
