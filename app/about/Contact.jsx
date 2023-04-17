@@ -1,7 +1,7 @@
 import React from "react";
 import ContactForm from "../ContactForm";
 import ContactInfo from "../ContactInfo";
-import { FacebookIcon, InstagramIcon, LinkedInIcon } from "../Icons";
+import { FacebookIcon, InstagramIcon, LinkedInIcon, GithubIcon } from "../Icons";
 
 //I'm using react form library called react-hook-form;
 const Contact = () => {
@@ -36,6 +36,12 @@ const Contact = () => {
           target={"_blank"}
         >
           <FacebookIcon />
+        </a>
+        <a
+          href="https://github.com/ThanHtikeZawGithub"
+          target={"_blank"}
+        >
+          <GithubIcon />
         </a>
         <a
           href="https://instagram.com/thanh_zaw?igshid=YmMyMTA2M2Y="
