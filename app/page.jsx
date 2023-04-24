@@ -27,7 +27,7 @@ export default function HomePage() {
             </p>
             <div className="flex items-center my-2">
               <Link
-                href="/resume.pdf"
+                href={'/public/resume.pdf'}
                 className="btn btn-small md:btn flex items-center justify-center text-xs tracking-widest font-semibold dark:text-primary"
                 download={true}
               >
