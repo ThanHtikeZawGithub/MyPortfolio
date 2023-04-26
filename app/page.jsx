@@ -12,8 +12,8 @@ export default function HomePage() {
       <div className="flex flex-col h-screen w-full md:flex-row overflow-hidden ">
         <div className="bg-primary dark:bg-zinc-800 px-4 flex basis-3/5 md:basis-8/12 md:relative transition-all duration-700">
           <div
-            className="mx-auto py-2 flex flex-col justify-center items-center md:items-start 
-                          top-40 max-w-xl md:max-w-3xl md:mx-auto font-mont font-bold"
+            className="mx-auto py-2 flex flex-col justify-center items-center md:items-start top-32
+                          md:top-40 max-w-xl md:max-w-3xl md:mx-auto font-mont font-bold"
           >
        
             <p className="text-sm font-mono font-bold text-gray-600 dark:text-primary3 md:text-xl mb-1 md:mb-4">
@@ -22,10 +22,10 @@ export default function HomePage() {
             <h2 className="text-4xl md:text-6xl font-bold font-mont text-dark tracking-tight dark:text-primary3 z-20">FRONTEND</h2>
             <h2 className="text-4xl md:text-6xl font-bold font-mont tracking-tight text-dark dark:text-primary3 mb-1 md:mb-2 z-20">DEVELOPER</h2>
             <Pattern1 className="hidden md:absolute md:-bottom-12 md:right-12 md:w-100 md:h-100 dark:invert" />
-            <p className="text-zinc-600 text-center md:text-start dark:text-primary3 font-raleway my-4 text-xs max-w-xs flex-wrap md:text-base ">
+            <p className="text-zinc-600 text-center md:text-start dark:text-primary3 font-raleway my-1 md:my-4 text-xs max-w-xs flex-wrap md:text-base ">
               Dedicated to craft ideas into solid applications, Always learning new things and developing creative ideas 
             </p>
-            <div className="flex items-center my-2">
+            <div className="flex items-center my-1 md:my-2">
               <Link
                 href={'/resume.pdf'}
                 className="btn btn-small md:btn flex items-center justify-center text-xs tracking-widest font-semibold dark:text-primary"
