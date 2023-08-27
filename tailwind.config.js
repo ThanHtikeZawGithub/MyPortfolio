@@ -16,7 +16,7 @@ module.exports = {
     extend: {
      colors:{
       primary: '#D7EFEA',
-      secondary: '#c7c83b',
+      secondary: '#222222',
       primary1: '#FFFFFF',
       primary3: '#17BE74',
       dark:'#1b1b1b',
@@ -31,6 +31,8 @@ module.exports = {
       raleway:['var(--font-raleway)', ...fontFamily.sans],
       alegreya: ['var(--font-alegreya)', ...fontFamily.sans ],
       open: ['var(--font-open)', ...fontFamily.serif],
+      man:['var(--font-man)', ...fontFamily.serif],
+      poppin:['var(--font-pop)', ...fontFamily.sans],
      },
     
     },

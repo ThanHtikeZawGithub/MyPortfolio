@@ -25,8 +25,9 @@ const Navbar = () => {
       }w-full px-8 md:px-16 py-3 font-medium z-20 flex items-center justify-between`}
     >
       <nav className="flex items-center justify-between">
-        <div className=" flex items-center justify-between">
-            <img src="/assets/logo.png" alt="logo" className="w-12 h-auto" />
+        <div className=" bg-slate-900 font-bold font-alegreya text-white text-5xl px-4 py-2 rounded-sm shadow-slate-900 shadow-lg flex items-center justify-between">
+            {/* <img src="/assets/logo.png" alt="logo" className="w-12 h-auto" /> */}
+            T
          </div>
       </nav>
       <nav className="flex items-center gap-4">

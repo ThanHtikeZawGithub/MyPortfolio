@@ -94,7 +94,24 @@
 @layer base {
   }
   .title {
-    @apply mx-auto w-full text-3xl text-center font-alegreya dark:text-primary3 text-dark font-bold
+    @apply mx-auto w-full uppercase tracking-[3px] text-center font-poppin dark:text-primary3 text-dark font-bold
   }
+
+  /* @keyframes glowing {
+    0% {
+      text-shadow: 0 0 5px grey;
+    }
+    50% {
+      text-shadow: 0 0 6px grey;
+    }
+    100% {
+      text-shadow: 0 0 7px grey;
+    }
+  }
+  
+  .animate-glow {
+    animation: glowing 2s infinite;
+  } */
+  
 
 

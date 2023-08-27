@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { skills } from "../Info";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper";
 // Import Swiper styles
 import "swiper/css/pagination";
 // import required modules
@@ -17,6 +18,10 @@ const Skill = () => {
         pagination={{
           clickable: true,
         }}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         breakpoints={{
           640: {
             slidesPerView: 1,
@@ -31,11 +36,11 @@ const Skill = () => {
             spaceBetween: 40,
           },
         }}
-        modules={[Pagination]}
+        modules={[Pagination, Autoplay]}
         className="mySwiper relative text-center mx-8">
          {skills.map((skill,index)=>{
           return (
-            <SwiperSlide key={index} className="bg-dark text-left py-4 px-4 rounded-md ">
+            <SwiperSlide key={index} className="bg-dark dark:bg-white text-left py-4 px-4 rounded-md ">
               <div className="relative flex items-center justify-between overflow-hidden">
               <span className="text-primary3 font-raleway dark:text-primary3 capitalize mb-16 font-semibold block">{skill.name}</span>
               <img src="/assets/shape-1.png" alt="image" className="w-28 h-28 -top-8 -right-8 absolute"/>
