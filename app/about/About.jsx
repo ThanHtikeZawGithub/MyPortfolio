@@ -16,7 +16,7 @@ const About = () => {
           As a fast-learner and adaptive person, I'm always learning new things and growing my skills all the time.
           </p>
         </div>
-        <div className="px-[64px]">
+        <div className="px-[64px] md:px-0">
           <h3 className="text-xl text-primary3 md:text-2xl md:px-16 text-center font-bold font-raleway">
             Qualifications
             </h3>
