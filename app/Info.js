@@ -19,6 +19,11 @@ export const aboutInfo = [
           date:'(Oct 2022)-present',
           des:'Mainly Frontend Design using Reactjs, Nextjs',
         },
+        {
+          cap:'Full-stack Developer - GENKI SYSTEM',
+          date:'(Apr 2023)-present',
+          des:'full-stack development of the web and AI stuff',
+        },
       ],
     },
     {
@@ -43,7 +48,7 @@ export const aboutInfo = [
       description: [
         {
           cap:'English',
-          date:'UpperIntermediate',
+          date:'C1 Advanced',
           des:'Comfortable to read, write and speak',
         },
         {
