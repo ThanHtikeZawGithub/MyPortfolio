@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import { LinkedInIcon, GithubIcon, FacebookIcon, InstagramIcon, SunIcon, MoonIcon } from "./Icons";
 import { motion } from "framer-motion";
 import useDarkTheme from "./useDarkTheme";
-import Link from "next/link";
 
 const Navbar = () => {
   const [isTopOfPage, setIsTopOfPage] = useState(true);
@@ -26,15 +25,10 @@ const Navbar = () => {
       }w-full px-8 md:px-16 py-3 font-medium z-20 flex items-center justify-between`}
     >
       <nav className="flex items-center justify-between">
-        <div className=" bg-slate-900 font-bold font-alegreya text-white text-2xl md:text-5xl px-4 py-2 rounded-sm shadow-slate-900 shadow-lg flex items-center justify-between">
+        <div className=" bg-slate-900 font-bold font-alegreya text-white text-5xl px-4 py-2 rounded-sm shadow-slate-900 shadow-lg flex items-center justify-between">
             {/* <img src="/assets/logo.png" alt="logo" className="w-12 h-auto" /> */}
             T
          </div>
-      </nav>
-      <nav className="hidden md:flex md:items-center md:justify-center md:gap-8">
-        <Link href={'/'}>Home</Link>
-        <Link href={'/work'}>Work</Link>
-        <Link href={'/blogs'}>Blogs</Link>
       </nav>
       <nav className="flex items-center gap-4">
         <div className="hidden md:flex items-center justify-between gap-3">
