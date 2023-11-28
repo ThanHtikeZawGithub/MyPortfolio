@@ -46,7 +46,7 @@ const SideNavLink = () => {
             className='text-2xl font-poppin font-medium text-slate-800'
             variants={itemVariants}
             >
-                {item}
+                <a href={`#${item}`} className="scroll-smooth">{item}</a>
             </motion.div>
         ))}
     </motion.div>

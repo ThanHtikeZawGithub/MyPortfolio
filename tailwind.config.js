@@ -22,6 +22,7 @@ module.exports = {
       dark:'#1b1b1b',
       light:'#f5f5f5',
       skill: "#190E33",
+      normal:"#1e293b"
      },
      backgroundImage:{
       'gradient':'linear-gradient(90deg, rgba(215,239,234,1) 67%, rgba(23,190,116,1) 67%)',

@@ -3,45 +3,68 @@ import { motion } from "framer-motion";
 import WebSvg from "./WebSvg";
 
 const floatingVariants = {
-    initial: {
-        x:0,
-        y:0,
-        opacity:1,
-        rotate: 10,
+  initial: {
+    y: 0,
+  },
+  animate: {
+    rotate: 5,
+    transition: {
+      staggerChildren: 0.2,
+      type: "spring",
+      stiffness: 20,
+      duration: 5,
+      repeat: Infinity,
+      repeatType: "reverse",
     },
-    animate: {
-        opacity:1,
-        y:5,
-        rotate: 10,
-        transition:{
-            staggerChildren:0.2,
-            type: "spring", 
-            stiffness: 20,
-            duration: 5,
-            repeat: Infinity,
-            repeatType: "reverse",
-            damping:8,
-        }
+  },
+  oppositeRotate: {
+    rotate: -6,
+    y:-3,
+    transition: {
+      staggerChildren: 0.2,
+      type: "spring",
+      stiffness: 20,
+      duration: 7,
+      repeat: Infinity,
+      repeatType: "reverse",
     },
-    dropIcon: {
-        opacity:1,
-        y:400,
-        rotate: 170,
-        transition: {
-            delay:5,
-            duration:3,
-        }
-    }
-}
-
+  },
+  verticalfloat: {
+    y: 2,
+    transition: {
+      type: "spring",
+      stiffness: 100,
+      duration: 2,
+      repeat: Infinity,
+      repeatType: "reverse",
+    },
+  },
+  dropIcon: {
+    opacity: 1,
+    y: 400,
+    rotate: 170,
+    transition: {
+      delay: 5,
+      duration: 3,
+    },
+  },
+  rotateIcon: {
+    rotate: 360,
+    transition: {
+      repeatDelay: 3,
+      duration: 2,
+      repeat: Infinity,
+    },
+  },
+};
 
 const CoverImage = () => {
   return (
-    <motion.div 
-    className=""
-    variant={floatingVariants}
-    initial="initial"
-    animate="animate"
+    <motion.div
+      className=""
+      variant={floatingVariants}
+      initial="initial"
+      animate="animate"
     >
       <Image
         src="/assets/profile_5.png"
@@ -51,10 +74,10 @@ const CoverImage = () => {
         height={550}
         className="z-20 relative"
       />
-      <motion.div 
-      className="absolute top-6 -rotate-12 left-0"
-      variants={floatingVariants}
-      animate="animate"
+      <motion.div
+        className="absolute top-6 -rotate-12 left-0"
+        variants={floatingVariants}
+        animate="oppositeRotate"
       >
         <Image
           src="/coverImage/i-left.png"
@@ -65,10 +88,10 @@ const CoverImage = () => {
           className=""
         />
       </motion.div>
-      <motion.div 
-      className="z-30 absolute top-[50%] left-20 rotate-12"
-      variants={floatingVariants}
-      animate="animate"
+      <motion.div
+        className="z-30 absolute top-[50%] left-20 rotate-12"
+        variants={floatingVariants}
+        animate="animate"
       >
         <Image
           src="/coverImage/i-left-b.png"
@@ -79,10 +102,10 @@ const CoverImage = () => {
           className=""
         />
       </motion.div>
-      <motion.div 
-      className="z-30 absolute bottom-4 right-[35%] -rotate-12"
-      variants={floatingVariants}
-      animate="animate"
+      <motion.div
+        className="z-20 absolute bottom-4 right-[35%] -rotate-12"
+        variants={floatingVariants}
+        animate="verticalfloat"
       >
         <Image
           src="/coverImage/i-right-b.png"
@@ -93,9 +116,10 @@ const CoverImage = () => {
           className=""
         />
       </motion.div>
-      <motion.div 
-      className="absolute top-[15%] right-12 z-30"
-      drag
+      <motion.div
+        className="absolute top-[15%] right-12 z-30"
+        variants={floatingVariants}
+        animate="rotateIcon"
       >
         <Image
           src="/coverImage/i-right-c.png"
@@ -106,10 +130,10 @@ const CoverImage = () => {
           className=""
         />
       </motion.div>
-      <motion.div 
-      className="absolute z-30 -top-8 right-[30%] -rotate-12"
-      variants={floatingVariants}
-      animate= "dropIcon"
+      <motion.div
+        className="absolute z-30 -top-8 right-[30%] -rotate-12"
+        variants={floatingVariants}
+        animate="dropIcon"
       >
         <Image
           src="/coverImage/i-right-t.png"
@@ -120,7 +144,7 @@ const CoverImage = () => {
           className=""
         />
       </motion.div>
-      <div>
+      <div className="z-30 absolute -bottom-6 left-[17%]">
         <WebSvg />
       </div>
     </motion.div>

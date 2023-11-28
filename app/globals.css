@@ -6,6 +6,12 @@
 *, ::before, ::after {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 section {
@@ -16,6 +22,7 @@ section {
   justify-content: center;
   align-items: center;
   align-content: center;
+  overflow: hidden;
 }
 
 .btn-small {

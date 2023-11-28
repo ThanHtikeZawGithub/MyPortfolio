@@ -57,17 +57,8 @@ export const FrontPage = () => {
         <Parallax />
       </section>
       <About />
-      <section className="flex flex-col h-screen w-full justify-center items-center md:flex-row overflow-hidden max-w-screen">
-        <Parallax />
-      </section>
       <Skill />
-      <section className="flex flex-col h-screen w-full justify-center items-center md:flex-row overflow-hidden max-w-screen">
-        <Parallax />
-      </section>
       <Projects />
-      <section className="flex flex-col h-screen w-full justify-center items-center md:flex-row overflow-hidden max-w-screen">
-        <Parallax />
-      </section>
       <Contact />
     </>
   );
