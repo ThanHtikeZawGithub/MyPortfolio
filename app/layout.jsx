@@ -3,6 +3,14 @@ import {Poppins, Raleway} from 'next/font/google';
 import { Alegreya, Open_Sans, Manrope } from 'next/font/google';
 import Navbar from './Navbar';
 import Script from 'next/script';
+import localfont from 'next/font/local';
+import Cursor from './_components/Cursor';
+
+const headingFont = localfont({
+  src: "../public/fonts/font.woff2",
+  variable: '--heading',
+});
+
 
 const raleway = Raleway({
   subsets:['latin'],
@@ -39,7 +47,7 @@ export default function RootLayout({ children }) {
  
   return (
     <html lang="en">
-      <body className={`${raleway.variable} ${alegreya.variable} ${openSans.variable} ${manrope.variable} ${poppin.variable}`}>
+      <body className={`${raleway.variable} ${alegreya.variable} ${openSans.variable} ${manrope.variable} ${poppin.variable} ${headingFont.variable}`}>
         <Script id='theme-switcher' strategy='beforeInteractive'>
           {`
           if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -49,6 +57,7 @@ export default function RootLayout({ children }) {
           }
           `}
         </Script>
+        <Cursor />
         <Navbar/>
         {children}
         </body>

@@ -1,10 +1,12 @@
 import React from "react";
-import ProjectCard from "../ProjectCard";
+import ProjectCard from "../../ProjectCard";
 
 const Projects = () => {
   return (
-    <section className="flex flex-col md:min-h-screen w-full px-8 md:px-24 overflow-hidden">
-      <h1 className="title my-8">_My Projects</h1>
+    <section 
+    className="flex flex-col w-full px-8 md:px-24 overflow-hidden"
+    id="Projects"
+    >
       <div className="grid grid-cols-1 mx-auto items-center md:grid-cols-2 w-full gap-12">
      
         <div>

@@ -1,16 +1,13 @@
 import React from "react";
-import ContactForm from "../ContactForm";
-import ContactInfo from "../ContactInfo";
-import { FacebookIcon, InstagramIcon, LinkedInIcon, GithubIcon } from "../Icons";
+import ContactForm from "../../ContactForm";
+import ContactInfo from "../../ContactInfo";
+import { FacebookIcon, InstagramIcon, LinkedInIcon, GithubIcon } from "../../Icons";
 
 //I'm using react form library called react-hook-form;
 const Contact = () => {
   return (
-    <section>
+    <section id="Contact Me">
       <div className="mx-auto px-8 pt-24 md:min-h-screen">
-        <h1 className="title top-0 py-6 ">
-          _Say Hello
-        </h1>
         <div className="block md:flex md:basis-1/2 md:justify-center md:gap-16">
           <ContactInfo />
           <div className="block px-4 md:flex md:basis-1/2">

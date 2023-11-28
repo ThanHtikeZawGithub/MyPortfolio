@@ -8,6 +8,16 @@
   padding: 0;
 }
 
+section {
+  height: 100vh;
+  scroll-snap-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
 .btn-small {
   padding: 5px 10px !important;
   min-width: 150px !important;

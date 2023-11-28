@@ -19,6 +19,11 @@ export const aboutInfo = [
           date:'(Oct 2022)-present',
           des:'Mainly Frontend Design using Reactjs, Nextjs',
         },
+        {
+          cap:'Full-stack Developer at GENKI SYSTEM (Remote)',
+          date:'(April 2023)-present',
+          des:"Develop app according to the clients's needs, mostly ai-powered app with OpenAI",
+        },
       ],
     },
     {
@@ -145,7 +150,6 @@ img:[
     src:'/assets/html.png',
   },
   {
-   
     src:'/assets/nextjs.png',
   },
   {
@@ -184,6 +188,13 @@ img:[
       name:'Freelance Jobs',
       title:'Freelance web developer',
       description:'I can build and design for your custom website in short amount of time.',
-      img:[]
+      img:[
+        {
+          src:'/assets/figma.png',
+        },
+        {
+          src:'/assets/nextjs.png',
+        },
+      ],
     },
   ];

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { skills } from "../Info";
+import { skills } from "../../Info";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
@@ -11,9 +11,11 @@ import "swiper/swiper.min.css";
 const Skill = () => {
   const [clickIcon, setClickIcon] = useState(false);
   return (
-    <section className="md:min-h-screen -z-20 py-1 px-2 md:px-24">
-      <div className="title my-8">_Services
-      </div>
+    <section 
+    className="-z-20"
+    id="Skills"
+    >
+      <div className="h-full max-w-screen w-full flex items-center justify-center bg-primary dark:bg-gradient-dark px-8 md:px-24">
       <Swiper 
         pagination={{
           clickable: true,
@@ -37,10 +39,10 @@ const Skill = () => {
           },
         }}
         modules={[Pagination, Autoplay]}
-        className="mySwiper relative text-center mx-8">
+        className="mySwiper relative text-center mx-auto">
          {skills.map((skill,index)=>{
           return (
-            <SwiperSlide key={index} className="bg-dark dark:bg-white text-left py-4 px-4 rounded-md ">
+            <SwiperSlide key={index} className="bg-skill text-left py-4 px-4 rounded-md ">
               <div className="relative flex items-center justify-between overflow-hidden">
               <span className="text-primary3 font-raleway dark:text-primary3 capitalize mb-16 font-semibold block">{skill.name}</span>
               <img src="/assets/shape-1.png" alt="image" className="w-28 h-28 -top-8 -right-8 absolute"/>
@@ -60,6 +62,7 @@ const Skill = () => {
          })
          }
       </Swiper>
+      </div>
     </section>
   );
 };
