@@ -1,18 +1,27 @@
 import React, { useState } from "react";
+import Image from "next/image";
 
 const AboutCard = (props) => {
   const [showInfo, setShowInfo] = useState(false);
 
   return (
-    <div key={props.title} className="my-4 border shadow-lg p-2 rounded-lg">
+    <div key={props.id} className="my-4 border shadow-lg p-1 rounded-lg relative">
       <div
         onClick={() => setShowInfo((curr) => !curr)}
-        className="cursor-pointer flex items-center relative overflow-hidden text-dark dark:text-primary"
+        className="cursor-pointer flex overflow-hidden text-dark dark:text-primary"
       >
-        <h3 className="md:text-sm font-medium font-poppins tracking-[2px] py-2">
+        <div className="absolute -top-2 -left-2">
+          <Image 
+          src={props.svg}
+          alt={props.title}
+          width={30}
+          height={30}
+          />
+        </div>
+        <h3 className="md:text-sm font-medium font-poppins py-2 pl-4">
           {props.title}
         </h3>
-        <span className="bg-primary3 text-center transition-all duration-500 z-50 font-extrabold text-lg w-8 h-8 rounded-full absolute right-0 top-0">
+        <span className="text-center bg-red-600 text-primary transition-all duration-500 z-40 font-extrabold text-lg w-8 h-8 rounded-full absolute right-1 top-1">
           {showInfo ? "-" : "+"}
         </span>
       </div>
@@ -22,17 +31,14 @@ const AboutCard = (props) => {
         } overflow-hidden duration-500`}
       >
         {props.description.map((val) => (
-          <div key={val.cap} className="md:px-2 px-2">
-            <div className="flex items-center justify-between">
-              <h1 className="font-bold text-sm md:text-base text-primary3 font-poppin">
+          <div key={val.cap} className="md:px-2 px-2 py-2">
+            <div className="flex flex-col items-start">
+              <h1 className="font-bold text-xs md:text-sm text-primary3 font-poppin">
                 {val.cap}
               </h1>
               <span className="font-semibold text-[10px] md:text-sm font-poppin">
                 {val.date}
               </span>
-            </div>
-            <div className="pb-3 font-semibold text-sm font-poppin">
-              {val.des}
             </div>
           </div>
         ))}

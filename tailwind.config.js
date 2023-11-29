@@ -35,11 +35,6 @@ module.exports = {
       'cloud': "url('/cloud.png')"
      },
      fontFamily: {
-      mont:['var(--font-mont)', ...fontFamily.sans],
-      raleway:['var(--font-raleway)', ...fontFamily.sans],
-      alegreya: ['var(--font-alegreya)', ...fontFamily.sans ],
-      open: ['var(--font-open)', ...fontFamily.serif],
-      man:['var(--font-man)', ...fontFamily.serif],
       poppin:['var(--font-pop)', ...fontFamily.sans],
      },
     

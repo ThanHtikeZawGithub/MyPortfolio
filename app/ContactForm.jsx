@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { useForm } from "react-hook-form";
+
 
 const ContactForm = () => {
 
@@ -15,8 +16,11 @@ const ContactForm = () => {
           e.preventDefault();
         }
       };
+
+    const ref = useRef();
   return (
     <form
+    ref={ref}
     target="_blank"
     onSubmit={onSubmit}
     action="https://formsubmit.co/69209e445c641faf20262c8d68f03fd1"
@@ -24,7 +28,7 @@ const ContactForm = () => {
     className="flex flex-col items-center md:items-start w-full"
   >
     <input
-      className="w-full font-semibold dark:bg-zinc-700 text-primary3 placeholder-opaque-black p-3 rounded-md"
+      className="w-full font-semibold dark:bg-primary text-primary3 placeholder-opaque-black p-3 rounded-md"
       type="text"
       placeholder="Kindly write your fullname"
       {...register("name", {
@@ -41,7 +45,7 @@ const ContactForm = () => {
     )}
 
     <input
-      className="w-full rounded-sm font-semibold dark:bg-zinc-700 text-primary3 placeholder-opaque-black  p-3 mt-5"
+      className="w-full rounded-sm font-semibold dark:bg-primary text-primary3 placeholder-opaque-black  p-3 mt-5"
       type="text"
       placeholder="Kindly write your email"
       {...register("email", {
@@ -57,7 +61,7 @@ const ContactForm = () => {
     )}
 
     <textarea
-      className="w-full dark:bg-zinc-700 text-primary3 font-semibold placeholder-opaque-black p-3 mt-5"
+      className="w-full dark:bg-primary text-primary3 font-semibold placeholder-opaque-black p-3 mt-5"
       type="text"
       placeholder="Kindly Write a message you want to talk about or want more details about me"
       rows='4'

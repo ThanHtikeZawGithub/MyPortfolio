@@ -1,33 +1,31 @@
-export const aboutInfo = [
+export const experience = [
   {
-    id: 1,
-    title: "EXPERIENCE",
-    description: [
-      {
-        cap: "Automotive Engineer (internship)",
-        date: "(Dec 2019)-(Feb 2020)",
-        des: "Responsible for managing work space",
-      },
-      {
-        cap: "Japanese Instructor (Full-time)",
-        date: "(Aug 2021)-(Sep 2022)",
-        des: "Taught N5 and N4 level through online",
-      },
-      {
-        cap: "Frontend Developer (freelance)",
-        date: "(Oct 2022)-present",
-        des: "Mainly Frontend Design using Reactjs, Nextjs",
-      },
-      {
-        cap: "Full-stack Developer at GENKI SYSTEM (Remote)",
-        date: "(April 2023)-present",
-        des: "Develop app according to the clients's needs, mostly ai-powered app with OpenAI",
-      },
-    ],
+    cap: "Automotive Engineer (internship)",
+    date: "(Dec 2019)-(Feb 2020)",
+    des: "Responsible for managing work space",
   },
   {
-    id: 2,
+    cap: "Japanese Instructor (Full-time)",
+    date: "(Aug 2021)-(Sep 2022)",
+    des: "Taught N5 and N4 level through online",
+  },
+  {
+    cap: "Frontend Developer (freelance)",
+    date: "(Oct 2022)-present",
+    des: "Mainly Frontend Design using Reactjs, Nextjs",
+  },
+  {
+    cap: "Full-stack Developer at GENKI SYSTEM (Remote)",
+    date: "(April 2023)-present",
+    des: "Develop app according to the clients's needs, mostly ai-powered app with OpenAI",
+  },
+];
+
+export const myAbout = [
+  {
+    id: 1,
     title: "EDUCATION",
+    svg: "assets/graduate.svg",
     description: [
       {
         cap: "Mechanical Engineering (MTU)",
@@ -42,8 +40,9 @@ export const aboutInfo = [
     ],
   },
   {
-    id: 3,
+    id: 2,
     title: "LANGAUAGE",
+    svg: "assets/language.svg",
     description: [
       {
         cap: "English",
@@ -187,52 +186,57 @@ export const skills = [
   },
 ];
 
-
 export const projects = [
   {
-    type:"Client's Website",
-    title:"ClipCrow",
-    img:"/assets/clipcrow.PNG",
-    summary:"#HTML #SCSS",
-    description:"A customer from my company requested a clean and maintainable html with scss codes to reuse in their own company website with deno/lume",
-    link:"https://clipcrow-demo.vercel.app/",
-    github:"https://github.com/ThanHtikeZawGithub/clipcrow-demo",
+    type: "Client's Website",
+    title: "ClipCrow",
+    img: "/assets/clipcrow.PNG",
+    summary: "#HTML #SCSS",
+    description:
+      "A customer from my company requested a clean and maintainable html with scss codes to reuse in their own company website with deno/lume",
+    link: "https://clipcrow-demo.vercel.app/",
+    github: "https://github.com/ThanHtikeZawGithub/clipcrow-demo",
   },
   {
-    type:"Frontend Development",
-    title:"Nike E-commerce App Demo",
-    summary:"#REACT #REDUX #TAILWINDCSS",
-    description:"Responsive Design and Frontend development for an ecommerce website",
-    img:"/assets/project-1.JPG",
-    link:"https://nike-e-commerce-store-demo.vercel.app/",
-    github:"https://github.com/ThanHtikeZawGithub/Nike-E-Commerce-store-Demo.git",
+    type: "Frontend Development",
+    title: "Nike E-commerce App Demo",
+    summary: "#REACT #REDUX #TAILWINDCSS",
+    description:
+      "Responsive Design and Frontend development for an ecommerce website",
+    img: "/assets/project-1.JPG",
+    link: "https://nike-e-commerce-store-demo.vercel.app/",
+    github:
+      "https://github.com/ThanHtikeZawGithub/Nike-E-Commerce-store-Demo.git",
   },
   {
-    type:"FullStack Development",
-    title:"Booking Application",
-    summary:"#REACT #NODE #TAILWINDCSS #MONGODB #FIREBASE",
-    img:"/assets/bookingpng.JPG",
-    description:"Functional Online Booking Website where u can create actual booking",
-    link:"https://booking-app-demo.vercel.app/",
-    github:"https://github.com/ThanHtikeZawGithub/Booking-App-Demo",
+    type: "FullStack Development",
+    title: "Booking Application",
+    summary: "#REACT #NODE #TAILWINDCSS #MONGODB #FIREBASE",
+    img: "/assets/bookingpng.JPG",
+    description:
+      "Functional Online Booking Website where u can create actual booking",
+    link: "https://booking-app-demo.vercel.app/",
+    github: "https://github.com/ThanHtikeZawGithub/Booking-App-Demo",
   },
   {
-    type:"Backend Development with Nextjs",
-    title:"The Daily News",
-    summary:"#NEXT #TAILWINDCSS #GRAPHQL",
-    img:"/assets/project-3.JPG",
-    description:"Fetching news using nextjs + graphQL, since its free subscription, so it has fetch limits",
-    link:"https://dailynews-blue.vercel.app/",
-    github:"https://github.com/ThanHtikeZawGithub/News-App",
+    type: "Backend Development with Nextjs",
+    title: "The Daily News",
+    summary: "#NEXT #TAILWINDCSS #GRAPHQL",
+    img: "/assets/project-3.JPG",
+    description:
+      "Fetching news using nextjs + graphQL, since its free subscription, so it has fetch limits",
+    link: "https://dailynews-blue.vercel.app/",
+    github: "https://github.com/ThanHtikeZawGithub/News-App",
   },
   {
-    type:"Full-stack development",
-    title:"E-commerce Admin panel",
-    img:"/assets/admin_panel1.JPG",
-    summary:"#NEXT #TAILWINDCSS #MONGODB #FIREBASE #NEXT OAUTH",
-    description:"Admin panel and manage product site for e-commerce website. In this project, you have to login with actual admin e-mail to get access",
-    link:"https://e-commerce-admin-panel-mu.vercel.app/",
-    github:"https://github.com/ThanHtikeZawGithub/E-commerce-Admin-panel",
+    type: "Full-stack development",
+    title: "E-commerce Admin panel",
+    img: "/assets/admin_panel1.PNG",
+    summary: "#NEXT #TAILWINDCSS #MONGODB #FIREBASE #NEXT OAUTH",
+    description:
+      "Admin panel and manage product site for e-commerce website. In this project, you have to login with actual admin e-mail to get access",
+    link: "https://e-commerce-admin-panel-mu.vercel.app/",
+    github: "https://github.com/ThanHtikeZawGithub/E-commerce-Admin-panel",
   },
   // {
   //   type:"Full-stack development",
@@ -243,4 +247,4 @@ export const projects = [
   //   link:"https://mawkon.vercel.app/",
   //   github:"https://github.com/ThanHtikeZawGithub/e-commerce-site",
   // }
-]
+];

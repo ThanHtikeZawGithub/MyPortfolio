@@ -15,7 +15,7 @@ const ToggleButton = ({ setOpen }) => {
         >
           <motion.path
             stroke="#5B5B55"
-            stroke-width="2"
+            stroke-width="3"
             stroke-linecap="round"
             variants={{
               closed: {d: "M 2 2.5 L 20 2.5"},
@@ -24,7 +24,7 @@ const ToggleButton = ({ setOpen }) => {
           />
           <motion.path
             stroke="#5B5B55"
-            stroke-width="2"
+            stroke-width="3"
             stroke-linecap="round"
             d="M 2 9.423 L 20 9.423"
             variants={{
@@ -34,7 +34,7 @@ const ToggleButton = ({ setOpen }) => {
           />
           <motion.path
             stroke="#5B5B55"
-            stroke-width="2"
+            stroke-width="3"
             stroke-linecap="round"
             variants={{
               closed: {d: "M 2 16.346 L 20 16.346"},

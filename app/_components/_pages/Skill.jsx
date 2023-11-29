@@ -37,6 +37,10 @@ const Skill = () => {
             slidesPerView: 3,
             spaceBetween: 40,
           },
+          1500: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          }
         }}
         modules={[Pagination, Autoplay]}
         className="mySwiper relative text-center mx-auto">

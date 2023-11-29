@@ -36,7 +36,7 @@ const Cover = () => {
           Hi. I'm
         </motion.p>
         <h2
-          className="text-2xl md:text-6xl font-bold font-poppin text-dark tracking-tight dark:text-primary z-20"
+          className="text-2xl md:text-5xl font-bold font-poppin text-dark dark:text-primary z-20"
           variants={textVariants}
         >
           FRONTEND<br/> 
@@ -63,14 +63,6 @@ const Cover = () => {
       </motion.div>
       <div className="h-[250px] md:h-[300px] bg-fixed bg-cover relative flex items-center justify-center">
         <CoverImage />
-        {/* <motion.p
-              className="font-extrabold absolute top-[50%] text-9xl z-10 whitespace-nowrap text-slate-300"
-              variants={sliderVariants}
-              initial="initial"
-              animate="animate"
-            >
-              Just Know What You're Doing
-            </motion.p> */}
       </div>
     </div>
   );

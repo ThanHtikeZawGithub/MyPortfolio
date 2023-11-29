@@ -12,25 +12,6 @@ const headingFont = localfont({
 });
 
 
-const raleway = Raleway({
-  subsets:['latin'],
-  variable: '--font-raleway',
-});
-const alegreya = Alegreya({
-  subsets:['latin'],
-  variable:'--font-alegreya',
-});
-
-const openSans = Open_Sans({
-  subsets:['latin'],
-  variable:'--font-open',
-})
-
-const manrope = Manrope ({
-  subsets:['latin'],
-  variable:'--font-man',
-})
-
 const poppin = Poppins ({
   subsets:['latin'],
   variable:'--font-pop',
@@ -47,7 +28,7 @@ export default function RootLayout({ children }) {
  
   return (
     <html lang="en">
-      <body className={`${raleway.variable} ${alegreya.variable} ${openSans.variable} ${manrope.variable} ${poppin.variable} ${headingFont.variable}`}>
+      <body className={`${poppin.variable} ${headingFont.variable}`}>
         <Script id='theme-switcher' strategy='beforeInteractive'>
           {`
           if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -57,7 +38,7 @@ export default function RootLayout({ children }) {
           }
           `}
         </Script>
-        <Cursor />
+        {/* <Cursor /> */}
         <Navbar/>
         {children}
         </body>

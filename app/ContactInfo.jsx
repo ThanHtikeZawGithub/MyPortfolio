@@ -3,8 +3,8 @@ import { Address, Email, Phone } from './Icons'
 
 const ContactInfo = () => {
   return (
-    <div className="flex flex-col px-5 md:px-8">
-            <h3 className='text-xl font-open font-semibold'>
+    <div className="flex flex-col px-5 md:px-8 text-normal dark:text-primary">
+            <h3 className='text-2xl font-poppin font-semibold'>
               Connect with me.
             </h3>
             <div className='flex flex-col justify-center gap-3 my-8'>

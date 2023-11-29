@@ -26,21 +26,7 @@ const textVariants = {
   },
 };
 
-const sliderVariants = {
-  initial: {
-    x: 0,
-    opacity: 1,
-  },
-  animate: {
-    x: "-120%",
-    opacity: 0,
-    transition: {
-      repeat: Infinity,
-      repeatType: "mirror",
-      duration: 30,
-    },
-  },
-};
+
 
 export const FrontPage = () => {
   const [open, setOpen] = useState(false);
