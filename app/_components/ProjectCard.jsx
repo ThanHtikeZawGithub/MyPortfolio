@@ -15,12 +15,23 @@ const ProjectCard = ({
 }) => {
 
   const ref = useRef();
-  const {scrollYProgress} = useScroll({target:ref, offset:["start start", "end start"]})
-  const y = useTransform(scrollYProgress, [0,1], ["0", "300%"])
+  const {scrollYProgress} = useScroll({
+    target:ref, 
+    offset:["start start", "end start"]
+  })
+  const y = useTransform(
+    scrollYProgress, 
+    [0,1], 
+    ["0", "300%"],
+    { clamp: false }
+    )
 
   return (
-    <section key={title} ref={ref} className="bg-primary dark:bg-gradient-dark">
-          <article className="flex items-center justify-center gap-12 px-8 w-full">
+    <section 
+      key={title} 
+      ref={ref} 
+      className="bg-primary dark:bg-gradient-dark">
+          <article className="flex flex-col md:flex-row items-center justify-center gap-12 px-8 w-full">
             <Link
               href={link}
               target="_blank"

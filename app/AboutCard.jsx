@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const AboutCard = (props) => {
   const [showInfo, setShowInfo] = useState(false);
-
+  
   return (
     <div key={props.id} className="my-4 border shadow-lg p-1 rounded-lg relative">
       <div
@@ -16,12 +16,13 @@ const AboutCard = (props) => {
           alt={props.title}
           width={30}
           height={30}
+          className="w-6 h-6 md:w-7 md:h-7"
           />
         </div>
-        <h3 className="md:text-sm font-medium font-poppins py-2 pl-4">
+        <h3 className="md:text-sm text-xs font-medium font-poppins md:py-2 py-1 pl-4">
           {props.title}
         </h3>
-        <span className="text-center bg-red-600 text-primary transition-all duration-500 z-40 font-extrabold text-lg w-8 h-8 rounded-full absolute right-1 top-1">
+        <span className="text-center bg-red-600 text-primary transition-all duration-500 z-40 font-extrabold text-sm md:text-lg md:w-8 md:h-8 w-5 h-5 rounded-full absolute right-1 top-1">
           {showInfo ? "-" : "+"}
         </span>
       </div>

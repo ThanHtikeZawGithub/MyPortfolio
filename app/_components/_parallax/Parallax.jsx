@@ -25,15 +25,15 @@ const Parallax = () => {
         About Me
       </motion.h1>
       <motion.div
-        className="bg-mountain bg-cover bg-bottom w-full h-full absolute z-30 overflow-hidden"
+        className="bg-mountain md:bg-cover bg-contain bg-no-repeat bg-bottom w-full h-full absolute z-30 overflow-hidden"
       ></motion.div>
       <motion.div
-        className="dark:bg-planet bg-sun bg-cover bg-bottom w-full h-full absolute z-10 overflow-hidden"
+        className="dark:bg-planet bg-sun md:bg-cover bg-contain bg-no-repeat bg-bottom w-[100%] h-[100%] absolute z-10 overflow-hidden"
         style={{ x: yBg }}
       >
       </motion.div>
       <motion.div
-        className="dark:bg-star bg-cloud bg-cover bg-bottom w-full h-full absolute z-20"
+        className="dark:bg-star bg-cloud md:bg-cover bg-contain bg-no-repeat bg-bottom w-[100%] h-[100%] absolute z-20"
         style={{ x: yBg }}
       >
       </motion.div>

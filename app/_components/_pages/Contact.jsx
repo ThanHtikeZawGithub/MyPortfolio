@@ -11,7 +11,7 @@ import {
 //I'm using react form library called react-hook-form;
 const Contact = () => {
   return (
-    <section id="Contact Me" className="bg-primary dark:bg-gradient-dark">
+    <section id="Contact Me" className="bg-primary dark:bg-gradient-dark h-full md:h-screen">
       <div className="mx-auto px-8 pt-24">
         <div className="block md:flex md:basis-1/2 md:justify-center md:gap-16">
           <ContactInfo />

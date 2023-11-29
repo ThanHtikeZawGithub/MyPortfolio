@@ -41,7 +41,7 @@ const floatingVariants = {
   },
   dropIcon: {
     opacity: 1,
-    y: 400,
+    y: 350,
     rotate: 170,
     transition: {
       delay: 5,
@@ -144,7 +144,7 @@ const CoverImage = () => {
           className=""
         />
       </motion.div>
-      <div className="z-30 absolute -bottom-6 left-[17%]">
+      <div className="z-30 absolute -bottom-14 md:-bottom-28 left-[17%]">
         <WebSvg />
       </div>
     </motion.div>

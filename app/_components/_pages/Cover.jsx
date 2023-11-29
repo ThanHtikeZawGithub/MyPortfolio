@@ -22,9 +22,9 @@ const textVariants = {
 
 const Cover = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center md:gap-24">
+    <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-24">
       <motion.div
-        className="mx-auto py-2 flex flex-col justify-center items-center md:items-start max-w-xl md:max-w-3xl"
+        className="mx-auto py-4 flex flex-col justify-center items-center md:items-start max-w-xl md:max-w-3xl"
         variants={textVariants}
         initial="initial"
         animate="animate"
@@ -40,11 +40,11 @@ const Cover = () => {
           variants={textVariants}
         >
           FRONTEND<br/> 
-          DEVELOPER
+          DEVELOPER.
         </h2>
         <Pattern1 className="hidden md:absolute md:-bottom-12 md:right-12 md:w-100 md:h-100 dark:invert" />
         <motion.p
-          className="text-zinc-600 text-center md:text-start dark:text-primary font-poppin my-1 md:my-4 text-xs font-medium max-w-xs flex-wrap md:text-sm "
+          className="text-zinc-600 text-justify md:text-start dark:text-primary font-poppin my-1 md:my-4 text-xs font-medium max-w-xs flex-wrap md:text-sm "
           variants={textVariants}
         >
           Dedicated to craft ideas into solid applications, Always learning new
