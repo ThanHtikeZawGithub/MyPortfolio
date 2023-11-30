@@ -36,7 +36,7 @@ const Cover = () => {
           Hi. I'm
         </motion.p>
         <h2
-          className="text-2xl md:text-5xl font-bold font-poppin text-dark dark:text-primary z-20"
+          className="text-3xl md:text-5xl font-bold font-poppin text-dark dark:text-primary z-20"
           variants={textVariants}
         >
           FRONTEND<br/> 
@@ -44,7 +44,7 @@ const Cover = () => {
         </h2>
         <Pattern1 className="hidden md:absolute md:-bottom-12 md:right-12 md:w-100 md:h-100 dark:invert" />
         <motion.p
-          className="text-zinc-600 text-justify md:text-start dark:text-primary font-poppin my-1 md:my-4 text-xs font-medium max-w-xs flex-wrap md:text-sm "
+          className="text-zinc-600 text-center px-8 pb-2 md:px-0 md:pb-0 md:text-start dark:text-primary font-poppin my-1 md:my-4 text-xs font-medium max-w-xs flex-wrap md:text-sm "
           variants={textVariants}
         >
           Dedicated to craft ideas into solid applications, Always learning new

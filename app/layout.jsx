@@ -5,6 +5,7 @@ import Navbar from './Navbar';
 import Script from 'next/script';
 import localfont from 'next/font/local';
 import Cursor from './_components/Cursor';
+import Footer from './_components/Footer';
 
 const headingFont = localfont({
   src: "../public/fonts/font.woff2",
@@ -41,6 +42,7 @@ export default function RootLayout({ children }) {
         {/* <Cursor /> */}
         <Navbar/>
         {children}
+        <Footer/>
         </body>
     </html>
   )

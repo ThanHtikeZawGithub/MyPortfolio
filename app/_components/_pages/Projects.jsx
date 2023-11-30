@@ -19,7 +19,7 @@ const Projects = () => {
       ref={ref}
     >
       <motion.div 
-      className="h-1 bg-slate-800 dark:bg-primary top-[90%] md:top-[14%] sticky pt-4"
+      className="h-1 bg-slate-800 dark:bg-primary top-[98%] md:top-[14%] sticky pt-4"
       style={{scaleX}}
       ></motion.div>
       {projects.map((project,i) => (

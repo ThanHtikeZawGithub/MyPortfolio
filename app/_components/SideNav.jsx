@@ -30,7 +30,7 @@ const SideNav = () => {
     animate={open ? "open" : "closed"}
     >
         <motion.div 
-        className='fixed w-[400px] top-0 left-0 bottom-0 h-screen bg-white flex flex-col items-center justify-center'
+        className='fixed md:w-[400px] w-[200px] top-0 left-0 bottom-0 h-screen bg-white flex flex-col items-center justify-center'
         variants={variants}
         >
         <SideNavLink />

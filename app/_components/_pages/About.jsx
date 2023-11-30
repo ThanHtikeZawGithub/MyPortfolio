@@ -22,29 +22,29 @@ const sliderVariants = {
 const About = () => {
   return (
     <section
-      className="h-full md:h-screen bg-primary dark:bg-gradient-dark relative flex flex-col md:mx-auto"
+      className="bg-primary dark:bg-gradient-dark relative flex flex-col md:mx-auto"
       id="About"
     >
-      <div className="flex flex-col md:flex-row items-start justify-start max-w-[1200px] h-full gap-6 relative pt-24">
-        <div className="flex flex-col items-center justify-end px-4 md:pl-8 gap-3 flex-1">
+      <div className="flex flex-col md:flex-row items-start justify-start max-w-[1200px] h-full gap-0 md:gap-6 relative pt-6 md:pt-24">
+        <div className="flex flex-col items-center pt-14 justify-start md:justify-end px-4 md:pl-8 md:gap-3 flex-1">
           <div className="">
-            <p className=" text-dark dark:text-primary text-sm md:text-base first-letter:text-2xl font-medium font-poppin text-start">
+            <p className="hidden md:flex text-dark dark:text-primary text-sm md:text-base first-letter:text-2xl font-medium font-poppin text-start">
               Currently working as remote fullstack developer at GENKI
               SYSTEM.
             </p>
-            <p className=" text-dark dark:text-primary text-sm md:text-base first-letter:text-2xl font-medium font-poppin text-start md:text-justify">
+            <p className="text-dark dark:text-primary text-sm md:text-base first-letter:text-2xl font-medium font-poppin text-start md:text-justify">
               I’m a fast-learner and self-taught developer with the help of
               youtube videos, documents and some learning platforms and got
               actual job in just 5 months.
             </p>
-            <p className=" text-dark dark:text-primary text-sm md:text-base first-letter:text-2xl font-medium font-poppin text-start md:text-justify">
+            <p className="hidden md:flex text-dark dark:text-primary text-sm md:text-base first-letter:text-2xl font-medium font-poppin text-start md:text-justify">
               Originally a mechanical engineer, break university as a final year
               student and started my learning journey on programming during
               COVID and C**p. Now I’m actually enjoying my career and passing 1+
               year of professional working experience.
             </p>
           </div>
-          <div className="flex items-start gap-16 z-20 w-full">
+          <div className="flex items-start gap-8 md:gap-16 z-20 w-full">
             {myAbout.map((val) => (
               <AboutCard
                 id={val.id}
@@ -61,7 +61,7 @@ const About = () => {
         <div className="px-4 flex-1 gap-2">
           {experience.map((exp) => (
               <div 
-              className="flex flex-col items-start p-2 border-b border-normal dark:border-primary"
+              className="flex flex-col items-start p-1 md:p-2 border-b border-normal dark:border-primary"
               key={exp.cap}
               >
                 <h1 className="font-bold text-sm md:text-base text-primary3 font-poppin">

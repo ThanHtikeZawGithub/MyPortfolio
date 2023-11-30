@@ -199,7 +199,7 @@ export const projects = [
   },
   {
     type: "Frontend Development",
-    title: "Nike E-commerce App Demo",
+    title: "E-commerce App",
     summary: "#REACT #REDUX #TAILWINDCSS",
     description:
       "Responsive Design and Frontend development for an ecommerce website",
@@ -210,7 +210,7 @@ export const projects = [
   },
   {
     type: "FullStack Development",
-    title: "Booking Application",
+    title: "Booking App",
     summary: "#REACT #NODE #TAILWINDCSS #MONGODB #FIREBASE",
     img: "/assets/bookingpng.JPG",
     description:

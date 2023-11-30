@@ -5,7 +5,7 @@ const AboutCard = (props) => {
   const [showInfo, setShowInfo] = useState(false);
   
   return (
-    <div key={props.id} className="my-4 border shadow-lg p-1 rounded-lg relative">
+    <div key={props.id} className="my-1 md:my-4 border shadow-lg p-1 rounded-lg relative">
       <div
         onClick={() => setShowInfo((curr) => !curr)}
         className="cursor-pointer flex overflow-hidden text-dark dark:text-primary"
@@ -32,7 +32,7 @@ const AboutCard = (props) => {
         } overflow-hidden duration-500`}
       >
         {props.description.map((val) => (
-          <div key={val.cap} className="md:px-2 px-2 py-2">
+          <div key={val.cap} className="md:p-2 p-0 px-1">
             <div className="flex flex-col items-start">
               <h1 className="font-bold text-xs md:text-sm text-primary3 font-poppin">
                 {val.cap}
