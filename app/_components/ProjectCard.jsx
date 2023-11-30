@@ -46,14 +46,14 @@ const ProjectCard = ({
               />
             </Link>
             <motion.div 
-            className="flex flex-col items-start justify-between px-4 flex-1"
+            className="flex flex-col items-start justify-between px-4 flex-1 text-normal dark:text-primary"
             style={{y}}
             >
-            <span className="text-slate-800 font-medium font-poppin text-sm mt-4">
+            <span className="font-medium font-poppin text-sm mt-4">
                 {type}
               </span>
               <Link href={link} target="_blank" className="">
-                <h2 className="my-2 w-full text-left text-4xl text-normal font-bold font-poppin">
+                <h2 className="my-2 w-full text-left text-3xl md:text-4xl  font-bold font-poppin">
                   {title}
                 </h2>
                 <p className="my-3 text-sm md:text-lg font-semibold font-mono tracking-widest">

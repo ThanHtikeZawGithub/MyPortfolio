@@ -33,7 +33,7 @@ const Parallax = () => {
       >
       </motion.div>
       <motion.div
-        className="dark:bg-star bg-cloud md:bg-cover bg-contain bg-no-repeat bg-bottom w-[100%] h-[100%] absolute z-20"
+        className="dark:bg-star bg-cloud md:bg-cover bg-contain bg-bottom w-[120%] h-screen absolute z-20"
         style={{ x: yBg }}
       >
       </motion.div>
