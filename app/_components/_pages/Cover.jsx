@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { LinkArrow, Pattern1, Profile } from "@/app/Icons";
 import Link from "next/link";
 import CoverImage from "../Cover-image";
+import Typewriter from "typewriter-effect";
 
 const textVariants = {
   initial: {
@@ -33,14 +34,21 @@ const Cover = () => {
           className="font-poppin text-xs font-bold text-gray-600 dark:text-primary md:text-sm mb-1 md:mb-4"
           variants={textVariants}
         >
-          Hi. I'm
+          Hi. I'm _
         </motion.p>
         <h2
-          className="text-3xl md:text-5xl font-bold font-poppin text-dark dark:text-primary z-20"
+          className="text-3xl md:text-5xl font-extrabold font-poppin tracking-tight text-slate-800 dark:text-primary z-20"
           variants={textVariants}
         >
-          FRONTEND<br/> 
-          DEVELOPER.
+          <Typewriter
+            options={{
+              strings: ["FRONTEND", "FULLSTACK"],
+              autoStart: true,
+              loop: true,
+              
+            }}
+          />
+          <div>DEVELOPER.</div>
         </h2>
         <Pattern1 className="hidden md:absolute md:-bottom-12 md:right-12 md:w-100 md:h-100 dark:invert" />
         <motion.p
