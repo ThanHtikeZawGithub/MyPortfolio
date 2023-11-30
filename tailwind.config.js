@@ -32,11 +32,16 @@ module.exports = {
       'planet' : "url('/planets.png')",
       'star' : "url('/stars.png')",
       'sun' : "url('/sun.png')",
-      'cloud': "url('/cloud.png')"
+      'cloud': "url('/cloud.png')",
+      'primaryBg':"linear-gradient(0deg, rgba(215,239,234,1) 30%, rgba(186,228,251,1) 100%)"
+
      },
      fontFamily: {
       poppin:['var(--font-pop)', ...fontFamily.sans],
      },
+     zIndex: {
+      '999' : '999',
+     }
     
     },
   },

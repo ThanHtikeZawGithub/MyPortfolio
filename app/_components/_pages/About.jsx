@@ -20,7 +20,7 @@ const sliderVariants = {
 const About = () => {
   return (
     <section
-      className="bg-primary dark:bg-gradient-dark relative flex flex-col md:mx-auto"
+      className="bg-primaryBg dark:bg-gradient-dark relative flex flex-col md:mx-auto"
       id="About"
     >
       <div className="flex flex-col md:flex-row items-center md:items-start max-w-[1200px] h-full gap-8 md:gap-6 relative pt-6 md:pt-20">

@@ -1,6 +1,5 @@
 import './globals.css'
-import {Poppins, Raleway} from 'next/font/google';
-import { Alegreya, Open_Sans, Manrope } from 'next/font/google';
+import {Poppins} from 'next/font/google';
 import Navbar from './Navbar';
 import Script from 'next/script';
 import localfont from 'next/font/local';
@@ -39,7 +38,7 @@ export default function RootLayout({ children }) {
           }
           `}
         </Script>
-        {/* <Cursor /> */}
+        <Cursor />
         <Navbar/>
         {children}
         <Footer/>

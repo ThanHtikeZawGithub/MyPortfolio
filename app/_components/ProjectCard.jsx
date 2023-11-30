@@ -30,7 +30,7 @@ const ProjectCard = ({
     <section 
       key={title} 
       ref={ref} 
-      className="bg-primary dark:bg-gradient-dark">
+      className="bg-primaryBg dark:bg-gradient-dark">
           <article className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-12 px-8 w-full">
             <Link
               href={link}

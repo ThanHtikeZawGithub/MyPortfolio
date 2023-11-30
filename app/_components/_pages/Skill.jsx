@@ -15,7 +15,7 @@ const Skill = () => {
     className="-z-20"
     id="Skills"
     >
-      <div className="h-full max-w-screen w-full flex items-center justify-center bg-primary dark:bg-gradient-dark px-8 md:px-24">
+      <div className="h-full max-w-screen w-full flex items-center justify-center bg-primaryBg dark:bg-gradient-dark px-8 md:px-24">
       <Swiper 
         pagination={{
           clickable: true,

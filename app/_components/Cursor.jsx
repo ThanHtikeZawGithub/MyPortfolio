@@ -20,10 +20,10 @@ const Cursor = () => {
   
   return (
     <motion.div 
-    className='z-50 w-[50px] h-[50px] rounded-full border border-solid border-white fixed'
+    className='hidden md:flex z-50 w-[50px] h-[50px] rounded-full border border-solid border-white fixed'
     animate={{
-        x:position.x+15,
-        y:position.y+15
+        x:position.x,
+        y:position.y
     }}
     >
     </motion.div>

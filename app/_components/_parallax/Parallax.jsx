@@ -15,7 +15,7 @@ const Parallax = () => {
 
   return (
     <div
-      className='relative flex items-center justify-center w-full h-screen bg-primary dark:bg-slate-800 overflow-hidden'
+      className='relative flex items-center justify-center w-full h-screen bg-primaryBg dark:bg-gradient-dark overflow-hidden'
       ref={ref}
     >
       <motion.h1
