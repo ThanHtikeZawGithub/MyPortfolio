@@ -144,7 +144,7 @@ const CoverImage = () => {
           className=""
         />
       </motion.div>
-      <div className="z-30 absolute -bottom-14 md:-bottom-28 left-[17%]">
+      <div className="z-30 absolute -bottom-12 md:-bottom-20 left-[17%]">
         <WebSvg />
       </div>
     </motion.div>
