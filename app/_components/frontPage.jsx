@@ -36,7 +36,7 @@ export const FrontPage = () => {
   };
   return (
     <>
-      <section className="w-full bg-primary dark:bg-slate-800 overflow-hidden max-w-screen">
+      <section className="w-full bg-primary dark:bg-gradient-dark overflow-hidden max-w-screen">
         <Cover />
       </section>
       <section className="flex flex-col h-screen w-full justify-center items-center md:flex-row overflow-hidden max-w-screen">

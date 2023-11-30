@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
-import WebSvg from "./WebSvg";
+// import WebSvg from "./WebSvg";
 
 const floatingVariants = {
   initial: {
@@ -144,9 +144,9 @@ const CoverImage = () => {
           className=""
         />
       </motion.div>
-      <div className="z-30 absolute -bottom-12 md:-bottom-20 left-[17%]">
+      {/* <div className="z-30 absolute -bottom-12 md:-bottom-20 left-[17%]">
         <WebSvg />
-      </div>
+      </div> */}
     </motion.div>
   );
 };
