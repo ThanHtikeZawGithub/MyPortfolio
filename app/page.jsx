@@ -1,3 +1,4 @@
+'use client'
 import { FrontPage } from "./_components/frontPage";
 import Loading from "./loading";
 
