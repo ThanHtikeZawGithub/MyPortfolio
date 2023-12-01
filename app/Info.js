@@ -86,10 +86,10 @@ export const backend = [
 
 export const skills = [
   {
-    name: "UI/UX Design",
-    title: "Web Design",
+    name: "Web Design",
+    title: "D E S I G N",
     description:
-      "Although it's not my expertise to design stuff but I'm familiar with tools like figma and I had some experience on designing advertisement for some business on facebook.",
+      "I can design awesome and creative websites with figma. Although I'm not a UI/UX expert, I can offer high quality standard websites.",
     img: [
       {
         src: "/assets/figma.png",
@@ -100,7 +100,7 @@ export const skills = [
     name: "Frontend Development",
     title: "F R O N T E N D",
     description:
-      "I've mainly worked on frontend development using reactjs and nextjs.I'm comfortable on utilizing libraries and building stunning websites. ",
+      "I've mainly worked on frontend development using reactjs and nextjs.With my expertise on nextjs, I can offer fast, user-friendly, SEO efficient websites.",
     img: [
       {
         src: "/assets/html.png",
@@ -126,23 +126,29 @@ export const skills = [
     name: "Backend Development",
     title: "B A C K E N D",
     description:
-      "I'm still in developing by skill on backend but I'm comfortable with nodejs for handling Restful Api and familiar with DataBase like mySQL and MongoDb",
+      "I'm comfortable using nodejs (express, nestjs) as my backend, handling RESTful api, databases, Docker, AWS EC2, S3.",
 
     img: [
       {
         src: "/assets/node.png",
       },
       {
-        src: "/assets/python1.png",
+        src: "/assets/express.png",
       },
       {
-        src: "/assets/html.png",
+        src: "/assets/nestjs.png"
       },
       {
-        src: "/assets/nextjs.png",
+        src: "/assets/php.png",
+      },
+      {
+        src: "/assets/aws.png",
       },
       {
         src: "/assets/mongodb.png",
+      },
+      {
+        src: "/assets/mysql.png",
       },
     ],
   },
@@ -174,13 +180,16 @@ export const skills = [
     name: "Freelance Jobs",
     title: "Freelance web developer",
     description:
-      "I can build and design for your custom website in short amount of time.",
+      "I can build and design for your custom website in short amount of time. Landing pages, SEO, wordpress, Api, all that services you can get from me.",
     img: [
       {
         src: "/assets/figma.png",
       },
       {
         src: "/assets/nextjs.png",
+      },
+      {
+        src: "/assets/wordpress.png",
       },
     ],
   },
@@ -238,13 +247,13 @@ export const projects = [
     link: "https://e-commerce-admin-panel-mu.vercel.app/",
     github: "https://github.com/ThanHtikeZawGithub/E-commerce-Admin-panel",
   },
-  // {
-  //   type:"Full-stack development",
-  //   title:"E-commerce",
-  //   img:"/assets/e-commerce.JPG",
-  //   summary:"#NEXT #MONGODB #StripeAPI #Styled-components #REACT",
-  //   description:"This version is not fully functional and I'll add more customizable functionality in the future.I'm using same database as admin-panel to fetch products and orders",
-  //   link:"https://mawkon.vercel.app/",
-  //   github:"https://github.com/ThanHtikeZawGithub/e-commerce-site",
-  // }
+  {
+    type:"Wordpress",
+    title:"Mirai Kaigi",
+    img:"/assets/mirai.PNG",
+    summary:"#Wordpress #PHP #Javascript #OpenAI #AwsS3",
+    description:"a customer from my company want a communication system where users can post and connect to each other. Some features include summarizing all the post of a user to generate a brief bio with chatgpt and file sharing system using AWS S3",
+    link:"http://miraikaigi.rf.gd",
+    github:"https://github.com/ThanHtikeZawGithub/wp-summarize-with-chatgpt",
+  }
 ];
