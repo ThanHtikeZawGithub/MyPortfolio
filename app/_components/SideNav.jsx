@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import {useRef, useState } from 'react'
 import ToggleButton from './ToggleButton'
 import { motion } from 'framer-motion';
 import SideNavLink from './SideNavLink';
+import { useOnClikcOutside } from '@/hooks/useOnClikcOutside';
 
 const SideNav = () => {
   const [open, setOpen] = useState(false);
@@ -24,14 +25,19 @@ const SideNav = () => {
     }
   }
 
+  const navRef = useRef();
+
+  useOnClikcOutside(navRef, () => setOpen(false));
   return (
     <motion.div
     className='bg-transparent cursor-pointer flex flex-col items-center justify-center text-black'
     animate={open ? "open" : "closed"}
+    ref={navRef}
     >
         <motion.div 
         className='fixed md:w-[400px] w-[200px] top-0 left-0 bottom-0 h-screen bg-white flex flex-col items-center justify-center'
         variants={variants}
+        ref={navRef}
         >
         <SideNavLink />
         </motion.div>

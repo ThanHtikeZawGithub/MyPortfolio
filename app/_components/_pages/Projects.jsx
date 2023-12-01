@@ -15,7 +15,7 @@ const Projects = () => {
   return (
     <div
       className="relative"
-      id="Projects"
+      id="projects"
       ref={ref}
     >
       <motion.div 

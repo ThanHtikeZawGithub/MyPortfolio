@@ -8,7 +8,7 @@ import Cover from "./_pages/Cover";
 
 export const FrontPage = () => {
   return (
-    <>
+    <>             
       <Cover />
       <Parallax />
       <About />

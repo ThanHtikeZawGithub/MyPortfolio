@@ -1,4 +1,5 @@
 import { motion } from "framer-motion"
+import { useEffect, useRef } from "react"
 
 const variants = {
   open: {
@@ -27,13 +28,12 @@ const itemVariants = {
 
 
 const SideNavLink = () => {
-
   const items = [
-    "Home",
-    "About",
-    "Skills",
-    "Projects",
-    "Contact Me"
+    "home",
+    "about",
+    "skills",
+    "projects",
+    "contact"
   ]
   return (
     <motion.div
@@ -46,7 +46,7 @@ const SideNavLink = () => {
             className='text-2xl font-poppin font-medium text-slate-800'
             variants={itemVariants}
             >
-                <a href={`#${item}`} className="scroll-smooth">{item}</a>
+                <a href={`#${item}`} className="scroll-smooth capitalize">{item}</a>
             </motion.div>
         ))}
     </motion.div>

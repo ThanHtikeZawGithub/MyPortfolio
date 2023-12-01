@@ -8,7 +8,7 @@ import Image from "next/image";
 
 const Skill = () => {
   return (
-    <section className="-z-20" id="Skills">
+    <section className="-z-20" id="skills">
       <div className="h-full max-w-screen w-full flex items-center justify-center bg-primaryBg dark:bg-gradient-dark px-8 md:px-24">
         <Swiper
           pagination={{
