@@ -14,6 +14,9 @@ module.exports = {
   darkMode :'class',
   theme: {
     extend: {
+     zIndex: {
+        '999': '999',
+      },
      colors:{
       primary: '#D7EFEA',
       secondary: '#222222',

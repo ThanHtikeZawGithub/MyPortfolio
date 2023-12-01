@@ -86,8 +86,7 @@ section {
 
 
 .swiper-horizontal> .swiper-pagination-bullets .swiper-pagination-bullet{
-  border: 2px solid bisque;
-  background-color: black;
+  /* border: 2px solid black; */
   z-index: 1;
   position: relative;
   opacity: 1;
@@ -100,7 +99,8 @@ section {
 }
 
 .swiper-horizontal> .swiper-pagination-bullets .swiper-pagination-bullet-active{
-  background-color: aqua;
+  background-color: #40FF21;
+  box-shadow: 0px 0px 12px #40FF21;
   width: 15px;
   height: 15px;
   top: 2px;

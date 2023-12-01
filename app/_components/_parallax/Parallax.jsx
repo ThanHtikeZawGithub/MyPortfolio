@@ -9,17 +9,18 @@ const Parallax = () => {
     offset: ["start end", "end start"]
   })
 
-  const yText = useTransform(scrollYProgress, [0, 1], ["0%", "100%"])
-  const yBg = useTransform(scrollYProgress, [0, 1], ["0%", "20%"])
+  const yText = useTransform(scrollYProgress, [0, 1], ["0%", "300%"])
+  const yBg = useTransform(scrollYProgress, [0, 1], ["0%", "30%"])
 
 
   return (
+    <section className="flex flex-col h-screen w-full justify-center items-center md:flex-row overflow-hidden max-w-screen">
     <div
       className='relative flex items-center justify-center w-full h-screen bg-primaryBg dark:bg-gradient-dark overflow-hidden'
       ref={ref}
     >
       <motion.h1
-        className="font-bold text-3xl font-poppin text-slate-700"
+        className="font-bold text-3xl top-[40%] absolute font-poppin text-slate-700"
         style={{ y: yText }}
       >
         About Me
@@ -38,6 +39,7 @@ const Parallax = () => {
       >
       </motion.div>
     </div>
+    </section>
   )
 }
 

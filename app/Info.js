@@ -178,7 +178,7 @@ export const skills = [
   },
   {
     name: "Freelance Jobs",
-    title: "Freelance web developer",
+    title: "Freelance Web",
     description:
       "I can build and design for your custom website in short amount of time. Landing pages, SEO, wordpress, Api, all that services you can get from me.",
     img: [

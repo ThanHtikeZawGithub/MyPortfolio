@@ -65,12 +65,13 @@ const About = () => {
           ))}
           <div className="flex items-start pt-4 md:pt-0 gap-8 md:gap-16 z-20 w-full">
             {myAbout.map((val) => (
+              <div key={val.id}>
               <AboutCard
-                id={val.id}
                 title={val.title}
                 description={val.description}
                 svg={val.svg}
               />
+              </div>
             ))}
           </div>
         </div>

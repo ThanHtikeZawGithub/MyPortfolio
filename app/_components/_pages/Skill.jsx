@@ -1,15 +1,12 @@
-import React, { useState } from "react";
 import { skills } from "../../Info";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
-// Import Swiper styles
 import "swiper/css/pagination";
-// import required modules
 import { Pagination } from "swiper";
 import "swiper/swiper.min.css";
+import Image from "next/image";
+
 const Skill = () => {
-  const [clickIcon, setClickIcon] = useState(false);
   return (
     <section className="-z-20" id="Skills">
       <div className="h-full max-w-screen w-full flex items-center justify-center bg-primaryBg dark:bg-gradient-dark px-8 md:px-24">
@@ -18,7 +15,7 @@ const Skill = () => {
             clickable: true,
           }}
           autoplay={{
-            delay: 2500,
+            delay: 4000,
             disableOnInteraction: false,
           }}
           breakpoints={{
@@ -55,29 +52,30 @@ const Skill = () => {
                   <img
                     src="/assets/shape-1.png"
                     alt="image"
-                    className="w-28 h-28 -top-8 -right-8 absolute"
+                    className="w-16 h-16 top-0 right-0 absolute"
                   />
                 </div>
                 <h3 className="text-2xl font-poppin font-bold mb-5 text-primary3 dark:text-primary3">
                   {skill.title}
                 </h3>
-                <p className="min-h-[175px] font-poppin text-primary dark:text-primary">
+                <p className="min-h-[175px] text-sm font-poppin text-primary dark:text-primary">
                   {skill.description}
                 </p>
-                {skill.img.map((image, index) => {
-                  return (
-                    <div
-                      key={index}
-                      className="inline-flex items-center justify-center mx-auto"
-                    >
-                      <img
-                        src={image.src}
-                        alt="Skill Image"
-                        className="h-10 w-auto"
-                      />
-                    </div>
-                  );
-                })}
+                <div className="inline-flex items-center gap-1 justify-center max-auto">
+                  {skill.img.map((image, index) => {
+                    return (
+                      <div key={index}>
+                        <Image
+                          src={image.src}
+                          width={30}
+                          height={30}
+                          alt="Skill Image"
+                          className="h-8 w-auto"
+                        />
+                      </div>
+                    );
+                  })}
+                </div>
               </SwiperSlide>
             );
           })}

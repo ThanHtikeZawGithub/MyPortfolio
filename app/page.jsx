@@ -1,10 +1,12 @@
-
 import { FrontPage } from "./_components/frontPage";
+import Loading from "./loading";
 
 export default function HomePage() {
+
   return (
-    <div>
-      <FrontPage/>
-    </div>
+    <>
+    <Loading />
+    <FrontPage/>
+    </>
   );
 }

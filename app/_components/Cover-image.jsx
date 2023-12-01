@@ -62,9 +62,8 @@ const CoverImage = () => {
   return (
     <motion.div
       className=""
-      variant={floatingVariants}
+      variants={floatingVariants}
       initial="initial"
-      animate="animate"
     >
       <Image
         src="/assets/profile_5.png"

@@ -1,14 +1,7 @@
 import React from "react";
 import ContactForm from "../../ContactForm";
 import ContactInfo from "../../ContactInfo";
-import {
-  FacebookIcon,
-  InstagramIcon,
-  LinkedInIcon,
-  GithubIcon,
-} from "../../Icons";
 
-//I'm using react form library called react-hook-form;
 const Contact = () => {
   return (
     <section id="Contact Me" className="bg-primaryBg dark:bg-gradient-dark">

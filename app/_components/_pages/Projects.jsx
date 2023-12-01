@@ -23,6 +23,7 @@ const Projects = () => {
       style={{scaleX}}
       ></motion.div>
       {projects.map((project,i) => (
+          <div key={i}>
           <ProjectCard
             type={project.type}
             title={project.title}
@@ -32,6 +33,7 @@ const Projects = () => {
             link={project.link}
             github={project.github}
           />
+          </div>
          ))}
     </div>
   );

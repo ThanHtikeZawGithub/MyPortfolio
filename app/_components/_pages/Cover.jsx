@@ -23,6 +23,7 @@ const textVariants = {
 
 const Cover = () => {
   return (
+    <section className="w-full bg-primaryBg dark:bg-gradient-dark overflow-hidden max-w-screen">
     <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-24">
       <motion.div
         className="mx-auto py-4 flex flex-col justify-center items-center md:items-start max-w-xl md:max-w-3xl"
@@ -73,6 +74,7 @@ const Cover = () => {
         <CoverImage />
       </div>
     </div>
+    </section>
   );
 };
 
