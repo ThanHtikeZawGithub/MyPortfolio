@@ -2,7 +2,7 @@ import { FacebookIcon, GithubIcon, InstagramIcon, LinkedInIcon } from "../Icons"
 
 const Footer = () => {
   return (
-    <div className="bg-indigo-900 h-full w-full px-0">
+    <div className="bg-indigo-900 h-full w-full px-0 font-poppin">
     <div className="flex items-center justify-between px-8 md:px-20">
       <div className="py-4">
         <h3 className="font-semibold text-base md:text-xl text-primary font-open">

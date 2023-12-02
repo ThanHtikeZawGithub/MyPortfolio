@@ -22,7 +22,7 @@ const AboutCard = (props) => {
         <h3 className="md:text-sm text-xs font-medium font-poppins md:py-2 py-1 pl-4">
           {props.title}
         </h3>
-        <span className="text-center bg-red-600 text-primary transition-all duration-500 z-40 font-extrabold text-sm md:text-lg md:w-8 md:h-8 w-5 h-5 rounded-full absolute right-1 top-1">
+        <span className="text-center bg-primary3 text-primary transition-all duration-500 z-40 font-extrabold text-sm md:text-lg md:w-8 md:h-8 w-5 h-5 rounded-full absolute right-1 top-1">
           {showInfo ? "-" : "+"}
         </span>
       </div>
