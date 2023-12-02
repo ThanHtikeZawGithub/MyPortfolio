@@ -22,11 +22,11 @@ const sliderVariants = {
 const About = () => {
   return (
     <section
-      className="bg-primaryBg dark:bg-gradient-dark relative flex flex-col md:mx-auto"
+      className="bg-primaryBg h-full md:h-screen py-14 dark:bg-gradient-dark relative flex flex-col md:mx-auto"
       id="about"
     >
-      <div className="flex flex-col md:flex-row items-center md:items-start max-w-[1200px] h-full gap-4 md:gap-6 relative pt-6 md:pt-20">
-        <div className="flex flex-col pt-16 md:pt-4 items-start justify-start md:justify-end px-4 md:pl-8 md:gap-3 md:flex-1">
+      <div className="flex flex-col md:flex-row items-center md:items-start max-w-[1200px] h-full gap-4 md:gap-6 relative">
+        <div className="flex flex-col md:pt-4 items-start justify-start md:justify-end px-4 md:pl-8 md:gap-3 md:flex-1">
           <div className="">
             <p className="text-dark dark:text-primary text-sm md:text-base first-letter:text-2xl font-medium font-poppin text-start">
               Currently working as remote fullstack developer at GENKI SYSTEM.
@@ -36,7 +36,7 @@ const About = () => {
               youtube videos, documents and some learning platforms and got
               actual job in just 5 months.
             </p>
-            <p className="hidden md:flex text-dark dark:text-primary text-sm md:text-base first-letter:text-2xl font-medium font-poppin text-start md:text-justify">
+            <p className="text-dark dark:text-primary text-sm md:text-base first-letter:text-2xl font-medium font-poppin text-start md:text-justify">
               Originally a mechanical engineer, break university as a final year
               student and started my learning journey on programming during
               COVID and C**p. Now I’m actually enjoying my career and passing 1+
@@ -69,12 +69,24 @@ const About = () => {
             <About_project />
           </div> */}
         </div>
-        <div className="px-4 md:flex-1 gap-2">
+        <div className="w-full px-4 md:flex-1 gap-2">
           {experience.map((exp) => (
+            
             <div
-              className="flex flex-col items-start p-1 md:p-2 border-b border-normal dark:border-primary"
+              className="flex items-center relative gap-2 md:gap-3 p-1 md:p-2 "
               key={exp.cap}
             >
+              <div className="w-[1px] h-full absolute left-[14px] md:left-[26px] top-0 bottom-0 bg-normal dark:bg-primaryBg"/>
+              <div className="w-6 h-6 md:w-10 md:h-10 px-2 hover:scale-110 transition-all duration-200 z-30 bg-normal relative dark:bg-primaryBg rounded-full">
+                <Image 
+                src={"/assets/online-learning.png"}
+                alt="work"
+                height={25}
+                width={25}
+                className="absolute top-[3px] left-[3px] md:top-[6px] md:left-[6px] w-4 h-4 md:w-6 md:h-6 "
+                />
+              </div>
+              <div className="border-b border-normal dark:border-primary w-full">
               <h1 className="font-bold text-sm md:text-base text-primary3 font-poppin">
                 {exp.cap}
               </h1>
@@ -84,6 +96,7 @@ const About = () => {
               <p className="hidden md:flex font-semibold text-sm font-poppin text-normal dark:text-primary">
                 {exp.des}
               </p>
+              </div>
             </div>
           ))}
           <div className="flex items-start pt-4 md:pt-0 gap-8 md:gap-16 z-20 w-full">
@@ -99,7 +112,7 @@ const About = () => {
           </div>
         </div>
         <motion.p
-          className="absolute font-medium bottom-0 text-9xl z-10 whitespace-nowrap text-slate-300 opacity-20 font-poppin"
+          className="absolute font-medium -bottom-12 text-9xl z-10 whitespace-nowrap text-slate-300 opacity-20 font-poppin"
           variants={sliderVariants}
           initial="initial"
           animate="animate"
