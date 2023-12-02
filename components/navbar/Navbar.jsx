@@ -9,7 +9,7 @@ import {
   MoonIcon,
 } from "../../lib/Icons";
 import { motion } from "framer-motion";
-import useDarkTheme from "../../lib/useDarkTheme";
+import useDarkTheme from "../../hooks/useDarkTheme";
 import SideNav from "./SideNav";
 
 const Navbar = () => {
