@@ -1,4 +1,4 @@
-import { skills } from "../../Info";
+import { skills } from "../lib/Info";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
 import "swiper/css/pagination";

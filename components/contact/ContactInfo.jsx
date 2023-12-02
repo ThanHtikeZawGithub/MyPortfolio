@@ -1,5 +1,5 @@
 import React from 'react'
-import { Address, Email, Phone } from './Icons'
+import { Address, Email, Phone } from '../../lib/Icons'
 
 const ContactInfo = () => {
   return (

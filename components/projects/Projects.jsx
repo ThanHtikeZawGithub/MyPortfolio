@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
-import ProjectCard from "../ProjectCard";
-import { projects } from "@/app/Info";
+import ProjectCard from "./ProjectCard";
+import { projects } from "@/lib/Info";
 import { motion, useScroll, useSpring } from "framer-motion";
 
 const Projects = () => {

@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
-import { experience, myAbout } from "../../Info";
-import AboutCard from "../../AboutCard";
+import { experience, myAbout } from "../../lib/Info";
+import AboutCard from "./AboutCard";
 import { motion } from "framer-motion";
-import AnimatedCounter from "../AnimatedCounter";
+import AnimatedCounter from "./AnimatedCounter";
 import Image from "next/image";
 
 const sliderVariants = {

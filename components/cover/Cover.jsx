@@ -1,9 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { LinkArrow, Pattern1, Profile } from "@/app/Icons";
+import { LinkArrow, Pattern1, Profile } from "@/lib/Icons";
 import Link from "next/link";
-import CoverImage from "../Cover-image";
+import CoverImage from "./Cover-image";
 import Typewriter from "typewriter-effect";
 
 const textVariants = {

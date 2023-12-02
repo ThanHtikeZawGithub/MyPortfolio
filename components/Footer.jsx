@@ -1,4 +1,4 @@
-import { FacebookIcon, GithubIcon, InstagramIcon, LinkedInIcon } from "../Icons"
+import { FacebookIcon, GithubIcon, InstagramIcon, LinkedInIcon } from "../lib/Icons"
 
 const Footer = () => {
   return (

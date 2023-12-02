@@ -1,10 +1,10 @@
 import './globals.css'
 import {Poppins} from 'next/font/google';
-import Navbar from './Navbar';
+import Navbar from '../components/navbar/Navbar';
 import Script from 'next/script';
 import localfont from 'next/font/local';
-import Cursor from './_components/Cursor';
-import Footer from './_components/Footer';
+import Cursor from '../components/Cursor';
+import Footer from '../components/Footer';
 
 const headingFont = localfont({
   src: "../public/fonts/font.woff2",

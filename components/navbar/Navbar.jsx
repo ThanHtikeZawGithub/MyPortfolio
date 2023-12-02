@@ -7,10 +7,10 @@ import {
   InstagramIcon,
   SunIcon,
   MoonIcon,
-} from "./Icons";
+} from "../../lib/Icons";
 import { motion } from "framer-motion";
-import useDarkTheme from "./useDarkTheme";
-import SideNav from "./_components/SideNav";
+import useDarkTheme from "../../lib/useDarkTheme";
+import SideNav from "./SideNav";
 
 const Navbar = () => {
   const [isTopOfPage, setIsTopOfPage] = useState(true);

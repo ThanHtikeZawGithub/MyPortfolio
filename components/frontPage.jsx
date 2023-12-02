@@ -1,10 +1,10 @@
 'use client'
 import Parallax from "./_parallax/Parallax";
-import About from "./_pages/About";
-import Skill from "./_pages/Skill";
-import Projects from "./_pages/Projects";
-import Contact from "./_pages/Contact";
-import Cover from "./_pages/Cover";
+import About from "./about/About";
+import Skill from "./Skill";
+import Projects from "./projects/Projects";
+import Contact from "./contact/Contact";
+import Cover from "./cover/Cover";
 
 export const FrontPage = () => {
   return (

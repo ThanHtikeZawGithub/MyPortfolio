@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { GithubIcon } from "../Icons"
+import { GithubIcon } from "../../lib/Icons"
 import { useRef } from "react"
 import {motion, useScroll ,useTransform} from 'framer-motion'
 
