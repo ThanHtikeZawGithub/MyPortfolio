@@ -59,15 +59,20 @@ const Cover = () => {
           Dedicated to craft ideas into solid applications, Always learning new
           things and developing creative ideas
         </motion.p>
-        <motion.div className="flex items-center my-1 md:my-2">
+        <motion.div className="flex items-center justify-center gap-4 my-1 md:my-2">
           <Link
             href={"/resume.pdf"}
-            className="btn btn-small md:btn flex items-center justify-center text-xs tracking-widest font-semibold dark:text-primary"
+            className="btn-small md:btn flex items-center justify-center text-xs tracking-widest font-semibold dark:text-primary"
             download={true}
           >
             Resume
-            <LinkArrow className="ml-2 w-5 h-5" />
+            <LinkArrow className="ml-2 w-2 h-2 md:w-4 md:h-4" />
           </Link>
+          <a href="#contact"
+          className="btn-small md:btn flex items-center justify-center text-xs tracking-widest font-semibold dark:text-primary"
+          >
+            Hire Me &rarr;
+          </a>
         </motion.div>
       </motion.div>
       <div className="h-[250px] md:h-[300px] bg-fixed bg-cover relative flex items-center justify-center">
