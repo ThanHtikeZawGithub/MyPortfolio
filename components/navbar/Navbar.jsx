@@ -11,6 +11,7 @@ import {
 import { motion } from "framer-motion";
 import useDarkTheme from "../../hooks/useDarkTheme";
 import SideNav from "./SideNav";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isTopOfPage, setIsTopOfPage] = useState(true);
@@ -37,6 +38,20 @@ const Navbar = () => {
       {/* <img src="/assets/logo.png" alt="logo" className="w-12 h-auto" /> */}
       {/* T
          </div> */}
+      <div className="fixed bottom-6 left-4">
+        <Image 
+          src={"/images/hinata.png"} 
+          width={100} 
+          height={100} 
+          className="w-16 h-16 md:hidden"
+          />
+           <Image 
+          src={"/images/hinata.png"} 
+          width={100} 
+          height={100} 
+          className="hidden md:block"
+          />
+      </div>
       <nav className="flex items-center gap-4">
         <div className="hidden md:flex items-center justify-between gap-3">
           <motion.a
