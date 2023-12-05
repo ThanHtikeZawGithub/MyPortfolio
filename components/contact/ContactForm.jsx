@@ -28,42 +28,42 @@ const ContactForm = () => {
     className="flex flex-col items-center md:items-start w-full"
   >
     <input
-      className="w-full font-semibold dark:bg-primary text-primary3 placeholder-opaque-black p-3 rounded-md"
+      className="w-full font-semibold font-poppin dark:bg-primary text-slate-800 p-3 rounded-md"
       type="text"
-      placeholder="Kindly write your fullname"
+      placeholder="Write your name"
       {...register("name", {
         required: true,
-        maxLength: 100,
+        maxLength: 50,
       })}
     />
     {errors.name && (
-      <p className="text-red mt-1 text-primary3">
+      <p className="mt-1 text-red-500">
         {errors.name.type === "required" && "This field is required."}
         {errors.name.type === "maxLength" &&
-          "Max Length is 100 character."}
+          "Max Length is 50 character."}
       </p>
     )}
 
     <input
-      className="w-full rounded-sm font-semibold dark:bg-primary text-primary3 placeholder-opaque-black  p-3 mt-5"
+      className="w-full rounded-md font-semibold dark:bg-primary text-slate-800 p-3 mt-5"
       type="text"
-      placeholder="Kindly write your email"
+      placeholder="Write your email"
       {...register("email", {
         required: true,
         pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
       })}
     />
     {errors.name && (
-      <p className="text-red mt-1">
+      <p className="text-red-500 mt-1">
         {errors.name.type === "required" && "This field is required."}
         {errors.name.type === "pattern" && "Invalid email address."}
       </p>
     )}
 
     <textarea
-      className="w-full dark:bg-primary text-primary3 font-semibold placeholder-opaque-black p-3 mt-5"
+      className="w-full rounded-md dark:bg-primary text-slate-800 font-semibold p-3 mt-5"
       type="text"
-      placeholder="Kindly Write a message you want to talk about or want more details about me"
+      placeholder="Write message"
       rows='4'
       cols='50'
       {...register("message", {
@@ -72,7 +72,7 @@ const ContactForm = () => {
       })}
     />
     {errors.name && (
-      <p className="text-red mt-1">
+      <p className="text-red-500 mt-1">
         {errors.name.type === "required" && "This field is required."}
         {errors.name.type === "maxLength" &&
           "Max Length is 2000 character."}
@@ -81,7 +81,7 @@ const ContactForm = () => {
 
     <button
        type="submit"
-       className="btn items-center font-semibold mt-6 tracking-widest text-normal dark:text-primary">
+       className="btn items-center font-semibold mt-6 tracking-widest text-normal hover:text-primary dark:text-primary">
           Send Me a Message  &rarr;
     </button>
   </form>

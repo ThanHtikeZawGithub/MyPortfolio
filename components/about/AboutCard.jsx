@@ -6,7 +6,7 @@ const AboutCard = (props) => {
   
   return (
     <div className="my-1 z-30 md:my-4 border shadow-lg p-1 rounded-lg relative">
-      <div
+      <button
         onClick={() => setShowInfo((curr) => !curr)}
         className="cursor-pointer flex overflow-hidden text-dark dark:text-primary"
       >
@@ -19,13 +19,13 @@ const AboutCard = (props) => {
           className="w-6 h-6 md:w-7 md:h-7"
           />
         </div>
-        <h3 className="md:text-sm text-xs font-medium font-poppins md:py-2 py-1 pl-4">
+        <h3 className="md:text-sm text-xs font-medium font-poppins md:py-2 py-1 pl-2 md:pl-4">
           {props.title}
         </h3>
-        <span className="text-center bg-primary3 text-primary transition-all duration-500 z-40 font-extrabold text-sm md:text-lg md:w-8 md:h-8 w-5 h-5 rounded-full absolute right-1 top-1">
+        <span className="text-center bg-primary3 text-primary transition-all duration-500 z-40 font-extrabold text-xs md:text-lg md:w-8 md:h-8 w-5 h-5 rounded-full absolute right-1 top-[6px]">
           {showInfo ? "-" : "+"}
         </span>
-      </div>
+      </button>
       <div
         className={`transition-all ${
           showInfo ? "opacity-100 max-h-[300px]" : "max-h-0 opacity-0"
@@ -37,7 +37,7 @@ const AboutCard = (props) => {
               <h1 className="font-bold text-xs md:text-sm text-primary3 font-poppin">
                 {val.cap}
               </h1>
-              <span className="font-semibold text-[10px] md:text-sm font-poppin">
+              <span className="font-semibold text-[10px] md:text-sm text-slate-800 dark:text-primary font-poppin">
                 {val.date}
               </span>
             </div>

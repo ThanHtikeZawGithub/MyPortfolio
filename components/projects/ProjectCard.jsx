@@ -68,7 +68,7 @@ const ProjectCard = ({
                 <Link
                   href={link}
                   target="_blank"
-                  className="btn text-center text-xs tracking-widest font-semibold"
+                  className="btn text-center flex items-center justify-center text-xs tracking-widest font-semibold"
                 >
                   Live Demo
                 </Link>

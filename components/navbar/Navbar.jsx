@@ -43,7 +43,7 @@ const Navbar = () => {
           src={"/images/hinata.png"} 
           width={100} 
           height={100} 
-          className="w-16 h-16 md:hidden"
+          className="w-16 h-12 md:hidden"
           />
            <Image 
           src={"/images/hinata.png"} 
