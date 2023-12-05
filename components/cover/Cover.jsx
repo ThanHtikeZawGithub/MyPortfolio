@@ -62,14 +62,14 @@ const Cover = () => {
         <motion.div className="flex items-center justify-center gap-4 my-1 md:my-2">
           <Link
             href={"/resume.pdf"}
-            className="btn-small md:btn flex items-center justify-center text-xs tracking-widest font-semibold dark:text-primary"
+            className="btn-small btn md:btn flex items-center justify-center text-xs tracking-widest font-semibold dark:text-primary"
             download={true}
           >
             Resume
             <LinkArrow className="ml-2 w-2 h-2 md:w-4 md:h-4" />
           </Link>
           <a href="#contact"
-          className="btn-small md:btn flex items-center justify-center text-xs tracking-widest font-semibold dark:text-primary"
+          className="btn-small btn md:btn flex items-center justify-center text-xs tracking-widest font-semibold dark:text-primary"
           >
             Hire Me &rarr;
           </a>
