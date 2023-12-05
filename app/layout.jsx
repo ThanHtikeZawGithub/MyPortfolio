@@ -22,6 +22,13 @@ const poppin = Poppins ({
 export const metadata = {
   title: 'Than Htike Zaw',
   description: 'A developer who has a great passion about programming',
+  icons: {
+    icon: {
+      url:'/images/hinata_shoyo.webp',
+      href:'/images/hinata_shoyo.webp'
+    }
+  }
+
 }
 
 export default function RootLayout({ children }) {

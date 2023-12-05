@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect, useRef } from 'react'
 import {HashLoader} from 'react-spinners';
-import { easeInOut, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 const Loading = () => {
   const splashRef = useRef();
