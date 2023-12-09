@@ -61,7 +61,7 @@ const Cover = () => {
         </p>
         <div className="flex items-center justify-center gap-4 my-1 md:my-2">
           <a
-            href="http://thz-write-blog.rf.gd"
+            href="http://thzwriteblogs.rf.gd"
             className="btn-small btn md:btn flex items-center justify-center text-xs tracking-widest font-semibold dark:text-primary"
           >
             Read My Blogs
