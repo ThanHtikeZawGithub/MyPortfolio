@@ -16,21 +16,24 @@ const Footer = () => {
         <a
           href="https://www.linkedin.com/in/than-htike-zaw-2653b71aa/"
           target={"_blank"}
+          aria-label="My linkedIn account link"
         >
           <LinkedInIcon />
         </a>
         <a
           href="https://www.facebook.com/profile.php?id=100085454234498"
           target={"_blank"}
+          aria-label="My facebook account link"
         >
           <FacebookIcon />
         </a>
-        <a href="https://github.com/ThanHtikeZawGithub" target={"_blank"}>
+        <a href="https://github.com/ThanHtikeZawGithub" target={"_blank"} aria-label="My github account link">
           <GithubIcon />
         </a>
         <a
           href="https://instagram.com/thanh_zaw?igshid=YmMyMTA2M2Y="
           target={"_blank"}
+          aria-label="My instagram account link"
         >
           <InstagramIcon />
         </a>

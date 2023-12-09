@@ -38,7 +38,7 @@ const Cover = () => {
           Hi. I'm 
         </p>
         <h2
-          className="text-3xl md:text-5xl font-extrabold font-poppin tracking-tight text-slate-800 dark:text-primary z-20"
+          className="text-3xl w-full text-center md:text-start md:text-5xl font-extrabold font-poppin tracking-tight text-slate-800 dark:text-primary z-20"
           // variants={textVariants}
         >
           <Typewriter

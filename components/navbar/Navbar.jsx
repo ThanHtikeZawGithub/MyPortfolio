@@ -42,15 +42,15 @@ const Navbar = () => {
         <Image 
           src={"/images/hinata.png"} 
           alt="shoyo for fun"
-          width={100} 
-          height={100} 
-          className="w-16 h-2 md:hidden"
+          width={128} 
+          height={84} 
+          className="w-16 h-12 md:hidden"
           />
            <Image 
           src={"/images/hinata.png"} 
           alt="shoyo for fun"
-          width={100} 
-          height={100} 
+          width={128} 
+          height={84} 
           className="hidden md:block"
           />
       </div>
@@ -61,7 +61,7 @@ const Navbar = () => {
             target={"_blank"}
             whileHover={{ y: -4 }}
             whileTap={{ scale: 0.9 }}
-            aria-label="My Github link"
+            aria-label="My Github account link"
           >
             <GithubIcon />
           </motion.a>
@@ -70,7 +70,7 @@ const Navbar = () => {
             target={"_blank"}
             whileHover={{ y: -4 }}
             whileTap={{ scale: 0.9 }}
-            aria-label="My LinkedIn link"
+            aria-label="My LinkedIn account link"
           >
             <LinkedInIcon />
           </motion.a>
@@ -79,7 +79,7 @@ const Navbar = () => {
             target={"_blank"}
             whileHover={{ y: -4 }}
             whileTap={{ scale: 0.9 }}
-            aria-label="My facebook link"
+            aria-label="My facebook account link"
           >
             <FacebookIcon />
           </motion.a>
@@ -88,7 +88,7 @@ const Navbar = () => {
             target={"_blank"}
             whileHover={{ y: -4 }}
             whileTap={{ scale: 0.9 }}
-            aria-label="My instagram link"
+            aria-label="My instagram account link"
           >
             <InstagramIcon />
           </motion.a>

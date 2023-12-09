@@ -19,9 +19,9 @@ const AboutCard = (props) => {
           className="w-6 h-6 md:w-7 md:h-7"
           />
         </div>
-        <h3 className="md:text-sm text-xs font-medium font-poppins md:py-2 py-1 pl-2 md:pl-4">
+        <p className="md:text-sm text-xs font-medium font-poppins md:py-2 py-1 pl-2 md:pl-4">
           {props.title}
-        </h3>
+        </p>
         <span className="text-center bg-primary3 text-primary transition-all duration-500 z-40 font-extrabold text-xs md:text-lg md:w-8 md:h-8 w-5 h-5 rounded-full absolute right-1 top-[6px]">
           {showInfo ? "-" : "+"}
         </span>
@@ -34,9 +34,9 @@ const AboutCard = (props) => {
         {props.description.map((val) => (
           <div key={val.cap} className="md:p-2 p-0 px-1">
             <div className="flex flex-col items-start">
-              <h1 className="font-bold text-xs md:text-sm text-primary3 font-poppin">
+              <p className="font-bold text-xs md:text-sm text-primary3 font-poppin">
                 {val.cap}
-              </h1>
+              </p>
               <span className="font-semibold text-[10px] md:text-sm text-slate-800 dark:text-primary font-poppin">
                 {val.date}
               </span>

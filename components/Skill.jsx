@@ -57,9 +57,9 @@ const Skill = () => {
                     className="w-auto h-full top-0 right-0 absolute"
                   />
                 </div>
-                <h3 className="text-2xl font-poppin font-bold mb-5 text-primary3 dark:text-primary3">
+                <h1 className="text-2xl font-poppin font-bold mb-5 text-primary3 dark:text-primary3">
                   {skill.title}
-                </h3>
+                </h1>
                 <p className="min-h-[175px] text-sm font-poppin text-primary dark:text-primary">
                   {skill.description}
                 </p>

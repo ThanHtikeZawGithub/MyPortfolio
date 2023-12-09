@@ -35,6 +35,7 @@ const ProjectCard = ({
             <Link
               href={link}
               target="_blank"
+              aria-label={link}
               className="cursor-pointer overflow-hidden flex-1 flex flex-col items-end justify-center w-full h-auto rounded-md"
             >
               <Image
@@ -62,12 +63,13 @@ const ProjectCard = ({
                 <p className="text-sm font-medium font-poppin">{description}</p>
               </Link>
               <div className="my-6 flex items-center justify-between gap-8">
-                <Link href={github} target="_blank" className="w-10">
+                <Link href={github} aria-label="To github" target="_blank" className="w-10">
                   <GithubIcon />
                 </Link>
                 <Link
                   href={link}
                   target="_blank"
+                  aria-label={link}
                   className="btn text-center flex items-center justify-center text-xs tracking-widest font-semibold"
                 >
                   Live Demo
