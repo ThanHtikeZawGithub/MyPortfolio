@@ -51,8 +51,10 @@ const Skill = () => {
                   </span>
                   <img
                     src="/assets/shape-1.png"
+                    height='0'
+                    width='0'
                     alt="image"
-                    className="w-16 h-16 top-0 right-0 absolute"
+                    className="w-auto h-full top-0 right-0 absolute"
                   />
                 </div>
                 <h3 className="text-2xl font-poppin font-bold mb-5 text-primary3 dark:text-primary3">

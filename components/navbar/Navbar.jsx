@@ -61,6 +61,7 @@ const Navbar = () => {
             target={"_blank"}
             whileHover={{ y: -4 }}
             whileTap={{ scale: 0.9 }}
+            aria-label="My Github link"
           >
             <GithubIcon />
           </motion.a>
@@ -69,6 +70,7 @@ const Navbar = () => {
             target={"_blank"}
             whileHover={{ y: -4 }}
             whileTap={{ scale: 0.9 }}
+            aria-label="My LinkedIn link"
           >
             <LinkedInIcon />
           </motion.a>
@@ -77,6 +79,7 @@ const Navbar = () => {
             target={"_blank"}
             whileHover={{ y: -4 }}
             whileTap={{ scale: 0.9 }}
+            aria-label="My facebook link"
           >
             <FacebookIcon />
           </motion.a>
@@ -85,6 +88,7 @@ const Navbar = () => {
             target={"_blank"}
             whileHover={{ y: -4 }}
             whileTap={{ scale: 0.9 }}
+            aria-label="My instagram link"
           >
             <InstagramIcon />
           </motion.a>
@@ -93,6 +97,7 @@ const Navbar = () => {
           <button
             onClick={() => setMode(mode === "dark" ? "light" : "dark")}
             className="flex items-center justify-between rounded-full p-1 bg-primary1"
+            aria-label="hidden"
           >
             {mode === "dark" ? <MoonIcon className="fill-dark" /> : <SunIcon />}
           </button>

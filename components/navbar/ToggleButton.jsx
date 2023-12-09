@@ -6,6 +6,7 @@ const ToggleButton = ({ setOpen }) => {
       <button
         className="absolute rounded-full bg-transparent z-50 top-[40px] left-[40px]"
         onClick={() => setOpen((prev) => !prev)}
+        aria-label="nav links"
       >
         <svg
           width="23"

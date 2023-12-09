@@ -20,15 +20,15 @@ const poppin = Poppins ({
 
 
 export const metadata = {
+  manifest: 'manifest.json',
   title: 'Than Htike Zaw',
-  description: 'A developer who has a great passion about programming',
+  description: 'A developer who has a great passion about web development',
   icons: {
     icon: {
-      url:'/images/hinata_shoyo.webp',
-      href:'/images/hinata_shoyo.webp'
+      url:'/images/pwa384x384.png',
+      href:'/images/pwa384x384.png'
     }
   }
-
 }
 
 export default function RootLayout({ children }) {
