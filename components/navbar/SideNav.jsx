@@ -29,7 +29,7 @@ const SideNav = () => {
 
   useOnClikcOutside(navRef, () => setOpen(false));
   return (
-    <motion.div
+    <motion.nav
     className='bg-transparent cursor-pointer flex flex-col items-center justify-center text-black'
     animate={open ? "open" : "closed"}
     ref={navRef}
@@ -42,7 +42,7 @@ const SideNav = () => {
         <SideNavLink />
         </motion.div>
         <ToggleButton setOpen={setOpen} />
-    </motion.div>
+    </motion.nav>
   )
 }
 

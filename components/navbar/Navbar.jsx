@@ -41,12 +41,14 @@ const Navbar = () => {
       <div className="fixed bottom-6 left-4">
         <Image 
           src={"/images/hinata.png"} 
+          alt="shoyo for fun"
           width={100} 
           height={100} 
-          className="w-16 h-12 md:hidden"
+          className="w-16 h-2 md:hidden"
           />
            <Image 
           src={"/images/hinata.png"} 
+          alt="shoyo for fun"
           width={100} 
           height={100} 
           className="hidden md:block"

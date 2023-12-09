@@ -60,14 +60,13 @@ const Cover = () => {
           things and developing creative ideas
         </p>
         <div className="flex items-center justify-center gap-4 my-1 md:my-2">
-          <Link
-            href={"/resume.pdf"}
+          <a
+            href="http://thz-write-blog.rf.gd"
             className="btn-small btn md:btn flex items-center justify-center text-xs tracking-widest font-semibold dark:text-primary"
-            download={true}
           >
-            Resume
+            Read My Blogs
             <LinkArrow className="ml-2 w-2 h-2 md:w-4 md:h-4" />
-          </Link>
+          </a>
           <a href="#contact"
           className="btn-small btn md:btn flex items-center justify-center text-xs tracking-widest font-semibold dark:text-primary"
           >
