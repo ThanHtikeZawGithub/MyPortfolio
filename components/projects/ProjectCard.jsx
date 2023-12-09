@@ -69,7 +69,7 @@ const ProjectCard = ({
                 <Link
                   href={link}
                   target="_blank"
-                  aria-label={"My project demo link"}
+                  aria-label="Link to the project"
                   className="btn text-center flex items-center justify-center text-xs tracking-widest font-semibold"
                 >
                   Live Demo
