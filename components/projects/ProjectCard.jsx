@@ -35,7 +35,7 @@ const ProjectCard = ({
             <Link
               href={link}
               target="_blank"
-              aria-label={link}
+              aria-label="My project demo link"
               className="cursor-pointer overflow-hidden flex-1 flex flex-col items-end justify-center w-full h-auto rounded-md"
             >
               <Image
@@ -69,7 +69,7 @@ const ProjectCard = ({
                 <Link
                   href={link}
                   target="_blank"
-                  aria-label={link}
+                  aria-label={"My project demo link"}
                   className="btn text-center flex items-center justify-center text-xs tracking-widest font-semibold"
                 >
                   Live Demo

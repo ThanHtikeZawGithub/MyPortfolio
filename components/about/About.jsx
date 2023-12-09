@@ -87,9 +87,9 @@ const About = () => {
                 />
               </div>
               <div className="border-b border-normal dark:border-primary w-full">
-              <h3 className="font-bold text-sm md:text-base text-primary3 font-poppin">
+              <p className="font-bold text-sm md:text-base text-primary3 font-poppin">
                 {exp.cap}
-              </h3>
+              </p>
               <span className="font-semibold text-[10px] md:text-sm text-normal dark:text-primary font-poppin">
                 {exp.date}
               </span>
