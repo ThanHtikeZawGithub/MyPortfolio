@@ -10,7 +10,7 @@ export const FrontPage = () => {
   return (
     <>             
       <Cover />
-      <Parallax />
+      {/* <Parallax /> */}
       <About />
       <Skill />
       <Projects />
