@@ -5,7 +5,7 @@ const AboutCard = (props) => {
   const [showInfo, setShowInfo] = useState(false);
   
   return (
-    <div className="my-1 z-30 md:my-4 border shadow-lg p-1 rounded-lg relative">
+    <div className="my-1 z-30 md:my-4 border shadow-lg py-1 px-4 rounded-lg relative">
       <button
         onClick={() => setShowInfo((curr) => !curr)}
         className="cursor-pointer flex overflow-hidden text-dark dark:text-primary"

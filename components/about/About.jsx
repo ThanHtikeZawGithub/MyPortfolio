@@ -44,17 +44,17 @@ const About = () => {
             </p>
           </div>
           <div className="flex items-center justify-center gap-6 mt-4">
-            <div className="w-20 h-20 md:w-32 md:h-32 flex flex-col text-primary dark:text-slate-800 font-poppin items-center justify-center rounded-full bg-slate-700 dark:bg-primaryBg">
+            <div className="w-20 h-20 md:w-32 md:h-32 flex flex-col text-slate-800 dark:text-slate-800 font-poppin items-center justify-center rounded-full bg-slate-100 dark:bg-primaryBg">
               <div className="font-semibold font-mono text-2xl md:text-5xl">
                 <AnimatedCounter from={0} to={10} />+
               </div>
               <div className="text-xs md:text-lg font-medium mt-1">projects</div>
             </div>
-            <div className="w-20 h-20 md:w-32 md:h-32 flex flex-col text-primary dark:text-slate-800 items-center justify-center rounded-full bg-slate-700 dark:bg-primaryBg">
+            <div className="w-20 h-20 md:w-32 md:h-32 flex flex-col text-slate-800 dark:text-slate-800 items-center justify-center rounded-full bg-slate-100 dark:bg-primaryBg">
               <div className="font-bold text-2xl font-mono md:text-5xl">1+</div>
               <div className="text-xs md:text-lg font-medium mt-1">years exp</div>
             </div>
-            <div className="w-20 h-20 md:w-32 md:h-32 flex flex-col text-primary dark:text-slate-800 items-center justify-center rounded-full bg-slate-700 dark:bg-primaryBg">
+            <div className="w-20 h-20 md:w-32 md:h-32 flex flex-col text-slate-800 dark:text-slate-800 items-center justify-center rounded-full bg-slate-100 dark:bg-primaryBg">
               <Image 
               src={'/assets/nextjs.png'}
               alt="nextjs"

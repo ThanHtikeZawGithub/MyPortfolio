@@ -66,11 +66,11 @@ const CoverImage = () => {
       initial="initial"
     >
       <Image
-        src="/assets/profile_5.png"
+        src="/assets/profile_6.png"
         alt="profile"
         priority
-        width={500}
-        height={550}
+        width={300}
+        height={300}
         className="z-20 relative"
       />
       <motion.div
@@ -115,7 +115,7 @@ const CoverImage = () => {
           className=""
         />
       </motion.div>
-      <motion.div
+      {/* <motion.div
         className="absolute top-[15%] right-12 z-30"
         variants={floatingVariants}
         animate="rotateIcon"
@@ -128,8 +128,8 @@ const CoverImage = () => {
           height={100}
           className=""
         />
-      </motion.div>
-      <motion.div
+      </motion.div> */}
+      {/* <motion.div
         className="absolute z-30 -top-8 right-[30%] -rotate-12"
         variants={floatingVariants}
         animate="dropIcon"
@@ -142,7 +142,7 @@ const CoverImage = () => {
           height={64}
           className=""
         />
-      </motion.div>
+      </motion.div> */}
       {/* <div className="z-30 absolute -bottom-12 md:-bottom-20 left-[17%]">
         <WebSvg />
       </div> */}
