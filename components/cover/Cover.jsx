@@ -5,6 +5,7 @@ import { LinkArrow, Pattern1, Profile } from "@/lib/Icons";
 import Link from "next/link";
 import CoverImage from "./Cover-image";
 import Typewriter from "typewriter-effect";
+import Image from "next/image";
 
 // const textVariants = {
 //   initial: {
@@ -23,22 +24,22 @@ import Typewriter from "typewriter-effect";
 
 const Cover = () => {
   return (
-    <section id="home" className="w-full bg-primaryBg dark:bg-gradient-dark overflow-hidden max-w-screen">
-    <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-24">
+    <section id="home" className="w-full bg-primaryBg dark:bg-gradient-dark overflow-hidden">
+    <div className="flex flex-col w-full md:p-32 items-center justify-center gap-8">
       <div
-        className="mx-auto py-4 flex flex-col justify-center items-center md:items-start max-w-xl md:max-w-3xl"
+        className="mx-auto py-4 flex w-full flex-col justify-center items-center md:items-start"
         // variants={textVariants}
         // initial="initial"
         // animate="animate"
       >
         <p
-          className="font-poppin text-xs font-bold text-gray-600 dark:text-primary md:text-sm mb-1 md:mb-4"
+          className="font-poppin z-20 text-base tracking-wider leading-8 font-bold text-white dark:text-primary md:text-3xl mb-1 md:mb-4"
           // variants={textVariants}
         >
-          Hi. I'm 
+        Than Htike Zaw
         </p>
         <h2
-          className="text-3xl w-full text-center md:text-start md:text-5xl font-extrabold font-poppin tracking-tight text-slate-800 dark:text-primary z-20"
+          className="text-3xl md:grid md:grid-cols-2 md:justify-start md:items-start md:text-start md:text-5xl font-bold font-poppin tracking-wide text-white dark:text-primary z-20"
           // variants={textVariants}
         >
           <Typewriter
@@ -53,7 +54,7 @@ const Cover = () => {
         </h2>
         <Pattern1 className="hidden md:absolute md:-bottom-12 md:right-12 md:w-100 md:h-100 dark:invert" />
         <p
-          className="text-zinc-600 text-center px-4 pb-2 md:px-0 md:pb-0 md:text-start dark:text-primary font-poppin my-1 md:my-4 text-xs font-medium max-w-xs flex-wrap md:text-sm "
+          className="text-white z-20 text-center md:mt-12 tracking-wider px-4 pb-2 md:px-0 md:pb-0 md:text-start dark:text-primary font-poppin my-1 md:my-4 text-xs font-medium flex-wrap md:text-base md:max-w-xl"
           // variants={textVariants}
         >
           Dedicated to craft ideas into solid applications, Always learning new
@@ -62,21 +63,29 @@ const Cover = () => {
         <div className="flex items-center justify-center gap-4 my-1 md:my-2">
           <a
             href="http://thzwriteblogs.rf.gd"
-            className="btn-small btn md:btn flex items-center justify-center text-xs tracking-widest font-semibold dark:text-primary"
+            className="btn-small btn md:btn flex items-center justify-center text-xs tracking-widest font-semibold text-white dark:text-primary"
           >
             Read My Blogs
             <LinkArrow className="ml-2 w-2 h-2 md:w-4 md:h-4" />
           </a>
           <a href="#contact"
-          className="btn-small btn md:btn flex items-center justify-center text-xs tracking-widest font-semibold dark:text-primary"
+          className="btn-small btn md:btn flex items-center justify-center text-xs tracking-widest font-semibold text-white dark:text-primary"
           >
             Hire Me &rarr;
           </a>
         </div>
       </div>
-      <div className="h-[250px] md:h-[300px] bg-fixed bg-cover relative flex items-center justify-center">
-        <CoverImage />
-      </div>
+      {/* <div className="bg-cover relative flex h-auto w-full"> */}
+        {/* <CoverImage /> */}
+        {/* <Image
+          src="/assets/profile.png"
+          alt="background"
+          priority
+          width={200}
+          height={100}
+          className="z-20 relative"
+        />
+      </div> */}
     </div>
     </section>
   );
