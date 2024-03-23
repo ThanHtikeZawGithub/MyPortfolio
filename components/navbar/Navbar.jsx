@@ -38,13 +38,13 @@ const Navbar = () => {
       {/* <img src="/assets/logo.png" alt="logo" className="w-12 h-auto" /> */}
       {/* T
          </div> */}
-      <div className="fixed bottom-6 left-4">
+      <a href="#" className="fixed bottom-6 left-4 cursor-pointer">
         <Image 
           src={"/images/hinata.png"} 
           alt="shoyo for fun"
           width={128} 
           height={84} 
-          className="w-16 h-12 md:hidden"
+          className="w-14 h-10 md:hidden"
           />
            <Image 
           src={"/images/hinata.png"} 
@@ -53,7 +53,7 @@ const Navbar = () => {
           height={84} 
           className="hidden md:block"
           />
-      </div>
+      </a>
       <nav className="flex items-center gap-4">
         <div className="hidden md:flex items-center justify-between gap-3">
           <motion.a

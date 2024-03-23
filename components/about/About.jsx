@@ -25,7 +25,7 @@ const About = () => {
       className="bg-primaryBg h-full md:h-screen py-14 dark:bg-gradient-dark relative flex flex-col md:mx-auto"
       id="about"
     >
-      <div className="flex flex-col md:flex-row items-center md:items-start max-w-[1200px] h-full gap-4 md:gap-6 relative">
+      <div className="flex flex-col md:grid md:grid-cols-2 justify-center w-full items-center max-w-[1200px] h-full gap-4 md:gap-6 relative">
         <div className="flex flex-col md:pt-4 items-start justify-start md:justify-end px-4 md:pl-8 md:gap-3 md:flex-1">
           <div className="">
             <p className="text-dark dark:text-primary text-sm md:text-base first-letter:text-2xl font-medium font-poppin text-start">
@@ -33,13 +33,12 @@ const About = () => {
             </p>
             <p className="text-dark dark:text-primary text-sm md:text-base first-letter:text-2xl font-medium font-poppin text-start md:text-justify">
               I’m a fast-learner and self-taught developer with the help of
-              youtube videos, documents and some learning platforms and got
-              actual job in just 5 months.
+              youtube videos, documents and some learning platforms.
             </p>
             <p className="text-dark dark:text-primary text-sm md:text-base first-letter:text-2xl font-medium font-poppin text-start md:text-justify">
               Originally a mechanical engineer, break university as a final year
               student and started my learning journey on programming during
-              COVID and C**p. Now I’m actually enjoying my career and passing 1+
+              COVID and C**p. Now I’m enjoying my career and passing 1+
               year of professional working experience.
             </p>
           </div>
@@ -69,47 +68,14 @@ const About = () => {
             <About_project />
           </div> */}
         </div>
-        <div className="w-full px-4 md:flex-1 gap-2">
-          {experience.map((exp) => (
-            
-            <div
-              className="flex items-center relative gap-2 md:gap-3 p-1 md:p-2 "
-              key={exp.cap}
-            >
-              <div className="w-[1px] h-full absolute left-[14px] md:left-[26px] top-0 bottom-0 bg-normal dark:bg-primaryBg"/>
-              <div className="w-6 h-6 md:w-10 md:h-10 px-2 hover:scale-110 transition-all duration-200 z-30 bg-normal relative dark:bg-primaryBg rounded-full">
-                <Image 
-                src={"/assets/online-learning.png"}
-                alt="work"
-                height={25}
-                width={25}
-                className="absolute top-[3px] left-[3px] md:top-[6px] md:left-[6px] w-4 h-4 md:w-6 md:h-6 "
-                />
-              </div>
-              <div className="border-b border-normal dark:border-primary w-full">
-              <p className="font-bold text-sm md:text-base text-primary3 font-poppin">
-                {exp.cap}
-              </p>
-              <span className="font-semibold text-[10px] md:text-sm text-normal dark:text-primary font-poppin">
-                {exp.date}
-              </span>
-              <p className="hidden md:flex font-semibold text-sm font-poppin text-normal dark:text-primary">
-                {exp.des}
-              </p>
-              </div>
-            </div>
-          ))}
-          <div className="flex items-start pt-4 md:pt-0 gap-8 md:gap-16 z-20 w-full">
-            {myAbout.map((val) => (
-              <div key={val.id}>
-                <AboutCard
-                  title={val.title}
-                  description={val.description}
-                  svg={val.svg}
-                />
-              </div>
-            ))}
-          </div>
+        <div className="flex items-center justify-center w-full">
+          <Image
+          src={'/assets/profile.png'}
+          alt="My profile"
+          height={250}
+          width={250}
+          className="h-auto rounded-md full"
+          />
         </div>
         <motion.p
           className="absolute font-medium -bottom-12 text-9xl z-10 whitespace-nowrap text-slate-300 opacity-20 font-poppin"
