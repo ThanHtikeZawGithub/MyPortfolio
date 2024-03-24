@@ -8,7 +8,7 @@ const AboutCard = (props) => {
     <div className="my-1 z-30 md:my-4 border backdrop-blur-xl shadow-lg py-1 px-4 rounded-lg relative">
       <div
         // onClick={() => setShowInfo((curr) => !curr)}
-        className="cursor-pointer flex overflow-hidden text-dark dark:text-primary"
+        className="cursor-pointer flex overflow-hidden text-dark dark:text-black"
       >
         <div className="absolute -top-2 -left-2">
           <Image 
@@ -35,7 +35,7 @@ const AboutCard = (props) => {
               <p className="font-bold text-xs md:text-base text-black font-poppin">
                 {val.cap}
               </p>
-              <span className="font-semibold text-[10px] md:text-sm text-slate-800 dark:text-primary font-poppin">
+              <span className="font-semibold text-[10px] md:text-sm text-slate-800 dark:text-black font-poppin">
                 {val.date}
               </span>
             </div>

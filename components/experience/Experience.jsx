@@ -7,12 +7,13 @@ const Experience = () => {
   return (
     <section
       style={{ backgroundImage: "url(./assets/passion.png)" }}
-      className=" h-full bg-cover bg-fixed md:h-screen py-14 dark:bg-gradient-dark relative w-full flex flex-col lg:px-32 2xl:px-64 md:grid md:grid-cols-2 md:items-center md:justify-center"
+      className=" h-full bg-cover bg-fixed md:h-screen py-14 px-4 dark:bg-gradient-dark relative w-full flex flex-col lg:px-32 2xl:px-64 md:grid md:grid-cols-2 md:items-center md:justify-center"
     >
+      <h1 className="absolute inset-0 text-[200px] opacity-25 text-gray-600 stroke-black stroke-2 font-extrabold leading-10 -tracking-widest font-mono">Experience</h1>
       <div>
       {experience.map((exp) => (
         <div
-          className="flex items-start justify-start w-full relative gap-2 md:gap-3 p-1 md:p-2 "
+          className="flex backdrop-blur-lg items-start justify-start w-full relative gap-2 md:gap-3 p-1 md:p-6 "
           key={exp.cap}
         >
           <div className="w-6 h-6 cursor-pointer md:w-10 md:h-10 px-2 hover:scale-110 transition-all duration-200 z-30 bg-normal relative dark:bg-primaryBg rounded-full">
@@ -28,10 +29,10 @@ const Experience = () => {
             <p className="font-bold text-sm md:text-2xl text-black font-poppin">
               {exp.cap}
             </p>
-            <span className="font-semibold text-[10px] md:text-sm text-normal dark:text-primary font-poppin">
+            <span className="font-semibold text-[10px] md:text-sm text-normal dark:text-black font-poppin">
               {exp.date}
             </span>
-            <p className="hidden md:flex font-semibold text-sm font-poppin text-normal dark:text-primary">
+            <p className="hidden md:flex font-semibold text-sm font-poppin text-normal dark:text-black">
               {exp.des}
             </p>
           </div>

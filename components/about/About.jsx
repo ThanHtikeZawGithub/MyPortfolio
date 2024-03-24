@@ -25,8 +25,9 @@ const About = () => {
       className="bg-primaryBg h-full md:h-screen py-14 dark:bg-gradient-dark relative flex flex-col md:mx-auto"
       id="about"
     >
+      <h1 className="absolute inset-0 text-[200px] opacity-25 text-gray-600 stroke-black stroke-2 font-extrabold leading-10 -tracking-widest font-mono overflow-hidden">About</h1>
       <div className="flex flex-col md:grid md:grid-cols-2 justify-center w-full items-center max-w-[1200px] h-full gap-4 md:gap-6 relative">
-        <div className="flex flex-col md:pt-4 items-start justify-start md:justify-end px-4 md:pl-8 md:gap-3 md:flex-1">
+        <div className="flex flex-col md:pt-4 items-center justify-center md:items-start md:justify-start px-4 md:pl-8 md:gap-3 md:flex-1">
           <div className="">
             <p className="text-dark dark:text-primary text-sm md:text-base first-letter:text-2xl font-medium font-poppin text-start">
               Currently working as remote fullstack developer at GENKI SYSTEM.
@@ -77,14 +78,14 @@ const About = () => {
           className="h-auto rounded-md full"
           />
         </div>
-        <motion.p
+        {/* <motion.p
           className="absolute font-medium -bottom-12 text-9xl z-10 whitespace-nowrap text-slate-300 opacity-20 font-poppin"
           variants={sliderVariants}
           initial="initial"
           animate="animate"
         >
           Just Know What You're Doing
-        </motion.p>
+        </motion.p> */}
       </div>
     </section>
   );

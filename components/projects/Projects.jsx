@@ -14,10 +14,11 @@ const Projects = () => {
 
   return (
     <div
-      className="relative"
+      className="relative z-20"
       id="projects"
       ref={ref}
     >
+      <h1 className="absolute md:inset-0 -inset-2 text-[200px] opacity-25 text-gray-600 font-extrabold leading-10 -tracking-widest font-mono overflow-hidden">Projects</h1>
       <motion.div 
       className="h-1 bg-gradient-dark dark:bg-primaryBg top-[98%] md:top-[14%] sticky pt-4"
       style={{scaleX}}
