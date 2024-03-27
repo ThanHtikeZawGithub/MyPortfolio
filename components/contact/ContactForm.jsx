@@ -45,7 +45,7 @@ const ContactForm = () => {
     )}
 
     <input
-      className="w-full rounded-md font-semibold dark:bg-primary text-slate-800 p-3 mt-5"
+      className="w-full font-poppin rounded-md font-semibold dark:bg-primary text-slate-800 p-3 mt-5"
       type="text"
       placeholder="Write your email"
       {...register("email", {
@@ -61,7 +61,7 @@ const ContactForm = () => {
     )}
 
     <textarea
-      className="w-full rounded-md dark:bg-primary text-slate-800 font-semibold p-3 mt-5"
+      className="w-full rounded-md font-poppin dark:bg-primary text-slate-800 font-semibold p-3 mt-5"
       type="text"
       placeholder="Write message"
       rows='4'
