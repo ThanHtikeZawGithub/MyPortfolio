@@ -5,7 +5,7 @@ import Image from 'next/image'
 const ContactInfo = () => {
   return (
     <div className="flex flex-col relative px-5 md:px-8 text-normal dark:text-primary">
-            <h3 className='text-2xl font-poppin leading-10 font-bold pb-2'>
+            <h3 className='text-2xl md:text-3xl font-poppin font-bold tracking-wide pb-2'>
               Connect with me.
             </h3>
             <div className='flex flex-col justify-center gap-1 md:gap-3 my-2 pb-2 md:pb-0 md:my-8'>
