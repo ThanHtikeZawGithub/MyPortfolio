@@ -13,7 +13,7 @@ const Experience = () => {
       <div>
       {experience.map((exp) => (
         <div
-          className="flex backdrop-blur-lg items-start justify-start w-full relative gap-2 md:gap-3 p-1 md:p-6 "
+          className="flex backdrop-blur-lg items-start justify-start w-full relative gap-2 md:gap-3 p-2 md:p-6 "
           key={exp.cap}
         >
           <div className="w-6 h-6 cursor-pointer md:w-10 md:h-10 px-2 hover:scale-110 transition-all duration-200 z-30 bg-normal relative dark:bg-primaryBg rounded-full">
@@ -39,7 +39,7 @@ const Experience = () => {
         </div>
       ))}
       </div>
-      <div className="flex flex-col items-center pt-4 md:pt-0 gap-8 md:gap-16 z-20 w-full">
+      <div className="flex flex-col items-center pt-4 md:pt-0 gap-2 md:gap-16 z-20 w-full">
         {myAbout.map((val) => (
           <div key={val.id}>
             <AboutCard

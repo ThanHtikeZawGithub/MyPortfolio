@@ -45,7 +45,7 @@ const ProjectCard = ({
           />
         </Link>
         <motion.div
-          className="flex flex-col items-start justify-between px-4 flex-1 text-normal dark:text-primary"
+          className="flex flex-col items-start justify-between flex-1 text-normal dark:text-primary"
           style={{ y }}
         >
           <span className="font-medium font-poppin text-sm mt-4">{type}</span>
