@@ -25,7 +25,7 @@ import Image from "next/image";
 const Cover = () => {
   return (
     <section id="home" className="w-full overflow-hidden">
-      <div className="flex flex-col bg-primaryBg dark:bg-gradient-dark z-20 px-4 lg:px-32 2xl:px-64 items-start justify-start w-full">
+      <div className="flex flex-col z-20 px-4 lg:px-32 2xl:px-64 items-start justify-start w-full">
         <div
           className="mx-auto py-4 flex w-full flex-col justify-center items-center md:items-start"
           // variants={textVariants}
@@ -33,7 +33,7 @@ const Cover = () => {
           // animate="animate"
         >
           <p
-            className="font-poppin z-20 text-base tracking-wider leading-8 font-semibold text-black dark:text-primary md:text-3xl mb-1 md:mb-4"
+            className="font-poppin z-20 text-base tracking-wider leading-8 font-semibold text-black dark:text-white md:text-3xl mb-1 md:mb-4"
             // variants={textVariants}
           >
             Than Htike Zaw
@@ -51,7 +51,6 @@ const Cover = () => {
             />
             <div>DEVELOPER.</div>
           </h2>
-          <Pattern1 className="hidden md:absolute md:-bottom-12 md:right-12 md:w-100 md:h-100 dark:invert" />
           <p
             className="text-black z-20 text-center md:mt-6 tracking-wider px-4 pb-2 md:px-0 md:pb-0 md:text-start dark:text-primary font-poppin my-1 md:my-4 text-xs font-medium flex-wrap md:text-base md:max-w-xl"
             // variants={textVariants}

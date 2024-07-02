@@ -5,10 +5,10 @@ const AboutCard = (props) => {
   // const [showInfo, setShowInfo] = useState(false);
   
   return (
-    <div className="my-1 z-30 md:my-4 border backdrop-blur-xl shadow-lg py-1 px-4 rounded-lg relative">
+    <div className="my-1 z-30 md:my-4 border-2 border-primary3 shadow-sm py-1 px-4 rounded-lg relative">
       <div
         // onClick={() => setShowInfo((curr) => !curr)}
-        className="cursor-pointer flex overflow-hidden text-dark dark:text-black"
+        className="cursor-pointer flex overflow-hidden text-dark dark:text-white"
       >
         <div className="absolute -top-2 -left-2">
           <Image 
@@ -32,10 +32,10 @@ const AboutCard = (props) => {
         {props.description.map((val) => (
           <div key={val.cap} className="md:p-2 p-0 px-1">
             <div className="flex flex-col items-start">
-              <p className="font-bold text-xs md:text-base text-black font-poppin">
+              <p className="font-bold text-xs md:text-base text-black dark:text-white font-poppin">
                 {val.cap}
               </p>
-              <span className="font-semibold text-[10px] md:text-sm text-slate-800 dark:text-black font-poppin">
+              <span className="font-semibold text-[10px] md:text-sm text-slate-800 dark:text-white font-poppin">
                 {val.date}
               </span>
             </div>

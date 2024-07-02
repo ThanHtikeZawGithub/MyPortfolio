@@ -9,9 +9,7 @@ import Experience from "./experience/Experience";
 
 export const FrontPage = () => {
   return (
-    <main className="relative">
-      <div className="absolute h-screen w-full bg-cover left-0 top-0 bg-fixed" style={{backgroundImage:'url(./assets/bg_cover.png)'}}>
-        </div>    
+    <main className="relative bg-primaryBg dark:bg-gradient-dark">    
       <Cover />
       <About />
       <Experience/>
